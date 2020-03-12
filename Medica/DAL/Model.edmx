@@ -1,0 +1,1738 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MedicalModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CONTRAINDICACION_DIAGNOSTICO">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+            <PropertyRef Name="IIDIAGNOSTICO" />
+          </Key>
+          <Property Name="ICODIGO" Type="int" Nullable="false" />
+          <Property Name="IIDIAGNOSTICO" Type="int" Nullable="false" />
+          <Property Name="VDESCRIPCION" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="CONTRAINDICACION_MEDICAMENTO">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+            <PropertyRef Name="IIDMEDICAMENTO" />
+          </Key>
+          <Property Name="ICODIGO" Type="int" Nullable="false" />
+          <Property Name="IIDMEDICAMENTO" Type="int" Nullable="false" />
+          <Property Name="VDESCRIPCION" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="CONTRAINDICACION_SINTOMA">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+            <PropertyRef Name="IIDSINTOMA" />
+          </Key>
+          <Property Name="ICODIGO" Type="int" Nullable="false" />
+          <Property Name="IIDSINTOMA" Type="int" Nullable="false" />
+          <Property Name="VDESCRIPCION" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="DATOSPERSONALES">
+          <Key>
+            <PropertyRef Name="VCEDULA" />
+          </Key>
+          <Property Name="VCEDULA" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="VNOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="VPRIMERAPELLIDO" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="VSEGUNDOPELLIDO" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DTFECHANACIMIENTO" Type="date" Nullable="false" />
+          <Property Name="VGENERO" Type="varchar" MaxLength="9" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DIAGNOSTICO">
+          <Key>
+            <PropertyRef Name="IID" />
+          </Key>
+          <Property Name="IID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="VDIAGNOSTICO" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="TDESCRIPCION" Type="text" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DIAGNOSTICO_SINTOMA">
+          <Key>
+            <PropertyRef Name="IIDDIAGNOSTICO" />
+            <PropertyRef Name="IIDSINTOMA" />
+          </Key>
+          <Property Name="IIDDIAGNOSTICO" Type="int" Nullable="false" />
+          <Property Name="IIDSINTOMA" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DOSIS">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+            <PropertyRef Name="VRANGO" />
+          </Key>
+          <Property Name="ICODIGO" Type="int" Nullable="false" />
+          <Property Name="VRANGO" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DDOSIS" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="DMIN" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="DMAX" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+        </EntityType>
+        <EntityType Name="EFECTO_ADVERSO">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+            <PropertyRef Name="IIDSINTOMA" />
+          </Key>
+          <Property Name="ICODIGO" Type="int" Nullable="false" />
+          <Property Name="IIDSINTOMA" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="INDICACION_DIAGNOSTICO">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+            <PropertyRef Name="IIDIAGNOSTICO" />
+          </Key>
+          <Property Name="ICODIGO" Type="int" Nullable="false" />
+          <Property Name="IIDIAGNOSTICO" Type="int" Nullable="false" />
+          <Property Name="VDESCRIPCION" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="INDICACION_SINTOMA">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+            <PropertyRef Name="ISINTOMA" />
+          </Key>
+          <Property Name="ICODIGO" Type="int" Nullable="false" />
+          <Property Name="ISINTOMA" Type="int" Nullable="false" />
+          <Property Name="VDESCRIPCION" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="MEDI_NOMBRE">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+            <PropertyRef Name="VNOMBRE" />
+          </Key>
+          <Property Name="ICODIGO" Type="int" Nullable="false" />
+          <Property Name="VNOMBRE" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MEDICAMENTO">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+          </Key>
+          <Property Name="ICODIGO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="VESTEROQUIMICA" Type="varchar" MaxLength="500" />
+          <Property Name="VCOMPOSIION" Type="varchar" MaxLength="500" />
+          <Property Name="VDESCRIPCION" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="BESTADO" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MEDICAMENTO_VIA">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+            <PropertyRef Name="IIDVIA" />
+          </Key>
+          <Property Name="ICODIGO" Type="int" Nullable="false" />
+          <Property Name="IIDVIA" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PACIENTE">
+          <Key>
+            <PropertyRef Name="VIDENTIFICACION" />
+          </Key>
+          <Property Name="VIDENTIFICACION" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="IDIAGNOSTICO" Type="int" Nullable="false" />
+          <Property Name="IEDAD" Type="int" Nullable="false" />
+          <Property Name="DTALLA" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="DPESO" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PACIENTE_MEDICAMENTO">
+          <Key>
+            <PropertyRef Name="VIDENTIFICACION" />
+            <PropertyRef Name="ICODIGO" />
+          </Key>
+          <Property Name="VIDENTIFICACION" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="ICODIGO" Type="int" Nullable="false" />
+          <Property Name="DDOSIS" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="VDESCRIPCION" Type="varchar" MaxLength="500" />
+          <Property Name="VVIAADMINISTRACION" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="VRANGO" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PACIENTE_SINTOMA">
+          <Key>
+            <PropertyRef Name="VIDENTIFICACION" />
+            <PropertyRef Name="IIDSINTOMA" />
+          </Key>
+          <Property Name="VIDENTIFICACION" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="IIDSINTOMA" Type="int" Nullable="false" />
+          <Property Name="BESTADO" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PADECIMIENTO">
+          <Key>
+            <PropertyRef Name="IID" />
+          </Key>
+          <Property Name="IID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IIDPACIENTE" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="IIDDIAGNOSTICO" Type="int" Nullable="false" />
+          <Property Name="DTFECHAINICIO" Type="date" Nullable="false" />
+          <Property Name="BESTADO" Type="bit" Nullable="false" />
+          <Property Name="DTFECHAFINALIZACION" Type="date" />
+        </EntityType>
+        <EntityType Name="SIGNOS_VITALES">
+          <Key>
+            <PropertyRef Name="IIDPACIENTE" />
+            <PropertyRef Name="DTFECHA" />
+          </Key>
+          <Property Name="IIDPACIENTE" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="DTFECHA" Type="datetime" Nullable="false" />
+          <Property Name="IPRESION" Type="int" />
+          <Property Name="DTEMPERATURA" Type="decimal" Precision="18" Scale="4" />
+          <Property Name="ISATURACION" Type="int" />
+          <Property Name="IPULSO" Type="int" />
+        </EntityType>
+        <EntityType Name="SINTOMA">
+          <Key>
+            <PropertyRef Name="IID" />
+          </Key>
+          <Property Name="IID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="VEFECTO" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="VDESCRIPCION" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <EntityType Name="USUARIO">
+          <Key>
+            <PropertyRef Name="USUARIO" />
+            <PropertyRef Name="PASSWORD" />
+          </Key>
+          <Property Name="USUARIO" Type="varchar" MaxLength="26" Nullable="false" />
+          <Property Name="PASSWORD" Type="varchar" MaxLength="26" Nullable="false" />
+          <Property Name="IDDATOSPERSONALES" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="VROL" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="VIA_ADMINISTRACION">
+          <Key>
+            <PropertyRef Name="IID" />
+          </Key>
+          <Property Name="IID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="VNOMBRE" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="VDESCRIPCION" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'Medical.dbo.VistaMedicamentosContraindicacion' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="VistaMedicamentosContraindicacion">
+          <Key>
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Name="Codigo" Type="int" Nullable="false" />
+          <Property Name="Medicamento" Type="varchar" MaxLength="100" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <!--Errores durante la generación:
+advertencia 6002: La tabla o vista 'Medical.dbo.VistaPacienteMedicamento' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
+        <EntityType Name="VistaPacienteMedicamento">
+          <Key>
+            <PropertyRef Name="Cedula" />
+            <PropertyRef Name="Dosis" />
+            <PropertyRef Name="Rango" />
+            <PropertyRef Name="Via_Administracion" />
+          </Key>
+          <Property Name="Cedula" Type="varchar" MaxLength="11" Nullable="false" />
+          <Property Name="Medicamento" Type="varchar" MaxLength="100" />
+          <Property Name="Dosis" Type="decimal" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="Rango" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Via_Administracion" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Descripcion" Type="varchar" MaxLength="500" />
+        </EntityType>
+        <Association Name="FK_CONTRAINDICACION_DIAGNOSTICO_DIAGNOSTICO">
+          <End Role="DIAGNOSTICO" Type="Self.DIAGNOSTICO" Multiplicity="1" />
+          <End Role="CONTRAINDICACION_DIAGNOSTICO" Type="Self.CONTRAINDICACION_DIAGNOSTICO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DIAGNOSTICO">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="CONTRAINDICACION_DIAGNOSTICO">
+              <PropertyRef Name="IIDIAGNOSTICO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CONTRAINDICACION_DIAGNOSTICO_MEDICAMENTO">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="CONTRAINDICACION_DIAGNOSTICO" Type="Self.CONTRAINDICACION_DIAGNOSTICO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="CONTRAINDICACION_DIAGNOSTICO">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO1">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="CONTRAINDICACION_MEDICAMENTO" Type="Self.CONTRAINDICACION_MEDICAMENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="CONTRAINDICACION_MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO2">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="CONTRAINDICACION_MEDICAMENTO" Type="Self.CONTRAINDICACION_MEDICAMENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="CONTRAINDICACION_MEDICAMENTO">
+              <PropertyRef Name="IIDMEDICAMENTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CONTRAINDICACION_SINTOMA_MEDICAMENTO">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="CONTRAINDICACION_SINTOMA" Type="Self.CONTRAINDICACION_SINTOMA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="CONTRAINDICACION_SINTOMA">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CONTRAINDICACION_SINTOMA_SINTOMA">
+          <End Role="SINTOMA" Type="Self.SINTOMA" Multiplicity="1" />
+          <End Role="CONTRAINDICACION_SINTOMA" Type="Self.CONTRAINDICACION_SINTOMA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SINTOMA">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="CONTRAINDICACION_SINTOMA">
+              <PropertyRef Name="IIDSINTOMA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DIAGNOSTICO_DIAGNOSTICO">
+          <End Role="DIAGNOSTICO" Type="Self.DIAGNOSTICO" Multiplicity="1" />
+          <End Role="DIAGNOSTICO1" Type="Self.DIAGNOSTICO" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="DIAGNOSTICO">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="DIAGNOSTICO1">
+              <PropertyRef Name="IID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DIAGNOSTICO_SINTOMA_DIAGNOSTICO">
+          <End Role="DIAGNOSTICO" Type="Self.DIAGNOSTICO" Multiplicity="1" />
+          <End Role="DIAGNOSTICO_SINTOMA" Type="Self.DIAGNOSTICO_SINTOMA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DIAGNOSTICO">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="DIAGNOSTICO_SINTOMA">
+              <PropertyRef Name="IIDDIAGNOSTICO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DIAGNOSTICO_SINTOMA_SINTOMA">
+          <End Role="SINTOMA" Type="Self.SINTOMA" Multiplicity="1" />
+          <End Role="DIAGNOSTICO_SINTOMA" Type="Self.DIAGNOSTICO_SINTOMA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SINTOMA">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="DIAGNOSTICO_SINTOMA">
+              <PropertyRef Name="IIDSINTOMA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DOSIS_MEDICAMENTO">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="DOSIS" Type="Self.DOSIS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="DOSIS">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EFECTO_ADVERSO_MEDICAMENTO">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="EFECTO_ADVERSO" Type="Self.EFECTO_ADVERSO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="EFECTO_ADVERSO">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_EFECTO_ADVERSO_SINTOMA">
+          <End Role="SINTOMA" Type="Self.SINTOMA" Multiplicity="1" />
+          <End Role="EFECTO_ADVERSO" Type="Self.EFECTO_ADVERSO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SINTOMA">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="EFECTO_ADVERSO">
+              <PropertyRef Name="IIDSINTOMA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INDICACION_DIAGNOSTICO_DIAGNOSTICO">
+          <End Role="DIAGNOSTICO" Type="Self.DIAGNOSTICO" Multiplicity="1" />
+          <End Role="INDICACION_DIAGNOSTICO" Type="Self.INDICACION_DIAGNOSTICO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DIAGNOSTICO">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="INDICACION_DIAGNOSTICO">
+              <PropertyRef Name="IIDIAGNOSTICO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INDICACION_DIAGNOSTICO_MEDICAMENTO">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="INDICACION_DIAGNOSTICO" Type="Self.INDICACION_DIAGNOSTICO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="INDICACION_DIAGNOSTICO">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INDICACION_SINTOMA_MEDICAMENTO">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="INDICACION_SINTOMA" Type="Self.INDICACION_SINTOMA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="INDICACION_SINTOMA">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INDICACION_SINTOMA_SINTOMA">
+          <End Role="SINTOMA" Type="Self.SINTOMA" Multiplicity="1" />
+          <End Role="INDICACION_SINTOMA" Type="Self.INDICACION_SINTOMA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SINTOMA">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="INDICACION_SINTOMA">
+              <PropertyRef Name="ISINTOMA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MEDI_NOMBRE_MEDICAMENTO">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="MEDI_NOMBRE" Type="Self.MEDI_NOMBRE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="MEDI_NOMBRE">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MEDICAMENTO_VIA_MEDICAMENTO">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="MEDICAMENTO_VIA" Type="Self.MEDICAMENTO_VIA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="MEDICAMENTO_VIA">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MEDICAMENTO_VIA_VIA_ADMINISTRACION">
+          <End Role="VIA_ADMINISTRACION" Type="Self.VIA_ADMINISTRACION" Multiplicity="1" />
+          <End Role="MEDICAMENTO_VIA" Type="Self.MEDICAMENTO_VIA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="VIA_ADMINISTRACION">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="MEDICAMENTO_VIA">
+              <PropertyRef Name="IIDVIA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PACIENTE_DATOSPERSONALES">
+          <End Role="DATOSPERSONALES" Type="Self.DATOSPERSONALES" Multiplicity="1" />
+          <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="DATOSPERSONALES">
+              <PropertyRef Name="VCEDULA" />
+            </Principal>
+            <Dependent Role="PACIENTE">
+              <PropertyRef Name="VIDENTIFICACION" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PACIENTE_DIAGNOSTICO">
+          <End Role="DIAGNOSTICO" Type="Self.DIAGNOSTICO" Multiplicity="1" />
+          <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DIAGNOSTICO">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="PACIENTE">
+              <PropertyRef Name="IDIAGNOSTICO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PACIENTE_MEDICAMENTO_MEDICAMENTO">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="PACIENTE_MEDICAMENTO" Type="Self.PACIENTE_MEDICAMENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="PACIENTE_MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PACIENTE_MEDICAMENTO_PACIENTE">
+          <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="1" />
+          <End Role="PACIENTE_MEDICAMENTO" Type="Self.PACIENTE_MEDICAMENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PACIENTE">
+              <PropertyRef Name="VIDENTIFICACION" />
+            </Principal>
+            <Dependent Role="PACIENTE_MEDICAMENTO">
+              <PropertyRef Name="VIDENTIFICACION" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PACIENTE_SINTOMA_PACIENTE">
+          <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="1" />
+          <End Role="PACIENTE_SINTOMA" Type="Self.PACIENTE_SINTOMA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PACIENTE">
+              <PropertyRef Name="VIDENTIFICACION" />
+            </Principal>
+            <Dependent Role="PACIENTE_SINTOMA">
+              <PropertyRef Name="VIDENTIFICACION" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PACIENTE_SINTOMA_SINTOMA">
+          <End Role="SINTOMA" Type="Self.SINTOMA" Multiplicity="1" />
+          <End Role="PACIENTE_SINTOMA" Type="Self.PACIENTE_SINTOMA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SINTOMA">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="PACIENTE_SINTOMA">
+              <PropertyRef Name="IIDSINTOMA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PADECIMIENTO_PACIENTE">
+          <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="1" />
+          <End Role="PADECIMIENTO" Type="Self.PADECIMIENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PACIENTE">
+              <PropertyRef Name="VIDENTIFICACION" />
+            </Principal>
+            <Dependent Role="PADECIMIENTO">
+              <PropertyRef Name="IIDPACIENTE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PADECIMIENTOS_DIAGNOSTICO">
+          <End Role="DIAGNOSTICO" Type="Self.DIAGNOSTICO" Multiplicity="1" />
+          <End Role="PADECIMIENTO" Type="Self.PADECIMIENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DIAGNOSTICO">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="PADECIMIENTO">
+              <PropertyRef Name="IIDDIAGNOSTICO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SIGNOS_VITALES_PACIENTE">
+          <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="1" />
+          <End Role="SIGNOS_VITALES" Type="Self.SIGNOS_VITALES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PACIENTE">
+              <PropertyRef Name="VIDENTIFICACION" />
+            </Principal>
+            <Dependent Role="SIGNOS_VITALES">
+              <PropertyRef Name="IIDPACIENTE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_USUARIO_DatosPersonales">
+          <End Role="DATOSPERSONALES" Type="Self.DATOSPERSONALES" Multiplicity="1" />
+          <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DATOSPERSONALES">
+              <PropertyRef Name="VCEDULA" />
+            </Principal>
+            <Dependent Role="USUARIO">
+              <PropertyRef Name="IDDATOSPERSONALES" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="EstadoPresionAlta" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="EstadoPresionBaja" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="EstadoPresionNormal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="EstadoPulsoAlta" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="EstadoPulsoBaja" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="EstadoPulsoNormal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="EstadoSaturacionAlta" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="EstadoSaturacionBaja" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="EstadoSaturacionNormal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="EstadoTemperaturaAlta" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="EstadoTemperaturaBaja" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="EstadoTemperaturaNormal" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="varchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="MedicalModelStoreContainer">
+          <EntitySet Name="CONTRAINDICACION_DIAGNOSTICO" EntityType="Self.CONTRAINDICACION_DIAGNOSTICO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CONTRAINDICACION_MEDICAMENTO" EntityType="Self.CONTRAINDICACION_MEDICAMENTO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CONTRAINDICACION_SINTOMA" EntityType="Self.CONTRAINDICACION_SINTOMA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DATOSPERSONALES" EntityType="Self.DATOSPERSONALES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DIAGNOSTICO" EntityType="Self.DIAGNOSTICO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DIAGNOSTICO_SINTOMA" EntityType="Self.DIAGNOSTICO_SINTOMA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DOSIS" EntityType="Self.DOSIS" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="EFECTO_ADVERSO" EntityType="Self.EFECTO_ADVERSO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="INDICACION_DIAGNOSTICO" EntityType="Self.INDICACION_DIAGNOSTICO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="INDICACION_SINTOMA" EntityType="Self.INDICACION_SINTOMA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MEDI_NOMBRE" EntityType="Self.MEDI_NOMBRE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MEDICAMENTO" EntityType="Self.MEDICAMENTO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MEDICAMENTO_VIA" EntityType="Self.MEDICAMENTO_VIA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PACIENTE" EntityType="Self.PACIENTE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PACIENTE_MEDICAMENTO" EntityType="Self.PACIENTE_MEDICAMENTO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PACIENTE_SINTOMA" EntityType="Self.PACIENTE_SINTOMA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PADECIMIENTO" EntityType="Self.PADECIMIENTO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SIGNOS_VITALES" EntityType="Self.SIGNOS_VITALES" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SINTOMA" EntityType="Self.SINTOMA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="USUARIO" EntityType="Self.USUARIO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VIA_ADMINISTRACION" EntityType="Self.VIA_ADMINISTRACION" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VistaMedicamentosContraindicacion" EntityType="Self.VistaMedicamentosContraindicacion" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[VistaMedicamentosContraindicacion].[Codigo] AS [Codigo], 
+[VistaMedicamentosContraindicacion].[Medicamento] AS [Medicamento], 
+[VistaMedicamentosContraindicacion].[Descripcion] AS [Descripcion]
+FROM [dbo].[VistaMedicamentosContraindicacion] AS [VistaMedicamentosContraindicacion]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="VistaPacienteMedicamento" EntityType="Self.VistaPacienteMedicamento" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+[VistaPacienteMedicamento].[Cedula] AS [Cedula], 
+[VistaPacienteMedicamento].[Medicamento] AS [Medicamento], 
+[VistaPacienteMedicamento].[Dosis] AS [Dosis], 
+[VistaPacienteMedicamento].[Rango] AS [Rango], 
+[VistaPacienteMedicamento].[Via_Administracion] AS [Via_Administracion], 
+[VistaPacienteMedicamento].[Descripcion] AS [Descripcion]
+FROM [dbo].[VistaPacienteMedicamento] AS [VistaPacienteMedicamento]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_CONTRAINDICACION_DIAGNOSTICO_DIAGNOSTICO" Association="Self.FK_CONTRAINDICACION_DIAGNOSTICO_DIAGNOSTICO">
+            <End Role="DIAGNOSTICO" EntitySet="DIAGNOSTICO" />
+            <End Role="CONTRAINDICACION_DIAGNOSTICO" EntitySet="CONTRAINDICACION_DIAGNOSTICO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CONTRAINDICACION_DIAGNOSTICO_MEDICAMENTO" Association="Self.FK_CONTRAINDICACION_DIAGNOSTICO_MEDICAMENTO">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="CONTRAINDICACION_DIAGNOSTICO" EntitySet="CONTRAINDICACION_DIAGNOSTICO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO1" Association="Self.FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO1">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="CONTRAINDICACION_MEDICAMENTO" EntitySet="CONTRAINDICACION_MEDICAMENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO2" Association="Self.FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO2">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="CONTRAINDICACION_MEDICAMENTO" EntitySet="CONTRAINDICACION_MEDICAMENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CONTRAINDICACION_SINTOMA_MEDICAMENTO" Association="Self.FK_CONTRAINDICACION_SINTOMA_MEDICAMENTO">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="CONTRAINDICACION_SINTOMA" EntitySet="CONTRAINDICACION_SINTOMA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CONTRAINDICACION_SINTOMA_SINTOMA" Association="Self.FK_CONTRAINDICACION_SINTOMA_SINTOMA">
+            <End Role="SINTOMA" EntitySet="SINTOMA" />
+            <End Role="CONTRAINDICACION_SINTOMA" EntitySet="CONTRAINDICACION_SINTOMA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DIAGNOSTICO_DIAGNOSTICO" Association="Self.FK_DIAGNOSTICO_DIAGNOSTICO">
+            <End Role="DIAGNOSTICO" EntitySet="DIAGNOSTICO" />
+            <End Role="DIAGNOSTICO1" EntitySet="DIAGNOSTICO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DIAGNOSTICO_SINTOMA_DIAGNOSTICO" Association="Self.FK_DIAGNOSTICO_SINTOMA_DIAGNOSTICO">
+            <End Role="DIAGNOSTICO" EntitySet="DIAGNOSTICO" />
+            <End Role="DIAGNOSTICO_SINTOMA" EntitySet="DIAGNOSTICO_SINTOMA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DIAGNOSTICO_SINTOMA_SINTOMA" Association="Self.FK_DIAGNOSTICO_SINTOMA_SINTOMA">
+            <End Role="SINTOMA" EntitySet="SINTOMA" />
+            <End Role="DIAGNOSTICO_SINTOMA" EntitySet="DIAGNOSTICO_SINTOMA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DOSIS_MEDICAMENTO" Association="Self.FK_DOSIS_MEDICAMENTO">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="DOSIS" EntitySet="DOSIS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EFECTO_ADVERSO_MEDICAMENTO" Association="Self.FK_EFECTO_ADVERSO_MEDICAMENTO">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="EFECTO_ADVERSO" EntitySet="EFECTO_ADVERSO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_EFECTO_ADVERSO_SINTOMA" Association="Self.FK_EFECTO_ADVERSO_SINTOMA">
+            <End Role="SINTOMA" EntitySet="SINTOMA" />
+            <End Role="EFECTO_ADVERSO" EntitySet="EFECTO_ADVERSO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INDICACION_DIAGNOSTICO_DIAGNOSTICO" Association="Self.FK_INDICACION_DIAGNOSTICO_DIAGNOSTICO">
+            <End Role="DIAGNOSTICO" EntitySet="DIAGNOSTICO" />
+            <End Role="INDICACION_DIAGNOSTICO" EntitySet="INDICACION_DIAGNOSTICO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INDICACION_DIAGNOSTICO_MEDICAMENTO" Association="Self.FK_INDICACION_DIAGNOSTICO_MEDICAMENTO">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="INDICACION_DIAGNOSTICO" EntitySet="INDICACION_DIAGNOSTICO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INDICACION_SINTOMA_MEDICAMENTO" Association="Self.FK_INDICACION_SINTOMA_MEDICAMENTO">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="INDICACION_SINTOMA" EntitySet="INDICACION_SINTOMA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INDICACION_SINTOMA_SINTOMA" Association="Self.FK_INDICACION_SINTOMA_SINTOMA">
+            <End Role="SINTOMA" EntitySet="SINTOMA" />
+            <End Role="INDICACION_SINTOMA" EntitySet="INDICACION_SINTOMA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MEDI_NOMBRE_MEDICAMENTO" Association="Self.FK_MEDI_NOMBRE_MEDICAMENTO">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="MEDI_NOMBRE" EntitySet="MEDI_NOMBRE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MEDICAMENTO_VIA_MEDICAMENTO" Association="Self.FK_MEDICAMENTO_VIA_MEDICAMENTO">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="MEDICAMENTO_VIA" EntitySet="MEDICAMENTO_VIA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MEDICAMENTO_VIA_VIA_ADMINISTRACION" Association="Self.FK_MEDICAMENTO_VIA_VIA_ADMINISTRACION">
+            <End Role="VIA_ADMINISTRACION" EntitySet="VIA_ADMINISTRACION" />
+            <End Role="MEDICAMENTO_VIA" EntitySet="MEDICAMENTO_VIA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PACIENTE_DATOSPERSONALES" Association="Self.FK_PACIENTE_DATOSPERSONALES">
+            <End Role="DATOSPERSONALES" EntitySet="DATOSPERSONALES" />
+            <End Role="PACIENTE" EntitySet="PACIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PACIENTE_DIAGNOSTICO" Association="Self.FK_PACIENTE_DIAGNOSTICO">
+            <End Role="DIAGNOSTICO" EntitySet="DIAGNOSTICO" />
+            <End Role="PACIENTE" EntitySet="PACIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PACIENTE_MEDICAMENTO_MEDICAMENTO" Association="Self.FK_PACIENTE_MEDICAMENTO_MEDICAMENTO">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="PACIENTE_MEDICAMENTO" EntitySet="PACIENTE_MEDICAMENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PACIENTE_MEDICAMENTO_PACIENTE" Association="Self.FK_PACIENTE_MEDICAMENTO_PACIENTE">
+            <End Role="PACIENTE" EntitySet="PACIENTE" />
+            <End Role="PACIENTE_MEDICAMENTO" EntitySet="PACIENTE_MEDICAMENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PACIENTE_SINTOMA_PACIENTE" Association="Self.FK_PACIENTE_SINTOMA_PACIENTE">
+            <End Role="PACIENTE" EntitySet="PACIENTE" />
+            <End Role="PACIENTE_SINTOMA" EntitySet="PACIENTE_SINTOMA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PACIENTE_SINTOMA_SINTOMA" Association="Self.FK_PACIENTE_SINTOMA_SINTOMA">
+            <End Role="SINTOMA" EntitySet="SINTOMA" />
+            <End Role="PACIENTE_SINTOMA" EntitySet="PACIENTE_SINTOMA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PADECIMIENTO_PACIENTE" Association="Self.FK_PADECIMIENTO_PACIENTE">
+            <End Role="PACIENTE" EntitySet="PACIENTE" />
+            <End Role="PADECIMIENTO" EntitySet="PADECIMIENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PADECIMIENTOS_DIAGNOSTICO" Association="Self.FK_PADECIMIENTOS_DIAGNOSTICO">
+            <End Role="DIAGNOSTICO" EntitySet="DIAGNOSTICO" />
+            <End Role="PADECIMIENTO" EntitySet="PADECIMIENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SIGNOS_VITALES_PACIENTE" Association="Self.FK_SIGNOS_VITALES_PACIENTE">
+            <End Role="PACIENTE" EntitySet="PACIENTE" />
+            <End Role="SIGNOS_VITALES" EntitySet="SIGNOS_VITALES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_USUARIO_DatosPersonales" Association="Self.FK_USUARIO_DatosPersonales">
+            <End Role="DATOSPERSONALES" EntitySet="DATOSPERSONALES" />
+            <End Role="USUARIO" EntitySet="USUARIO" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MedicalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CONTRAINDICACION_DIAGNOSTICO">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+            <PropertyRef Name="IIDIAGNOSTICO" />
+          </Key>
+          <Property Name="ICODIGO" Type="Int32" Nullable="false" />
+          <Property Name="IIDIAGNOSTICO" Type="Int32" Nullable="false" />
+          <Property Name="VDESCRIPCION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="DIAGNOSTICO" Relationship="Self.FK_CONTRAINDICACION_DIAGNOSTICO_DIAGNOSTICO" FromRole="CONTRAINDICACION_DIAGNOSTICO" ToRole="DIAGNOSTICO" />
+          <NavigationProperty Name="MEDICAMENTO" Relationship="Self.FK_CONTRAINDICACION_DIAGNOSTICO_MEDICAMENTO" FromRole="CONTRAINDICACION_DIAGNOSTICO" ToRole="MEDICAMENTO" />
+        </EntityType>
+        <EntityType Name="CONTRAINDICACION_MEDICAMENTO">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+            <PropertyRef Name="IIDMEDICAMENTO" />
+          </Key>
+          <Property Name="ICODIGO" Type="Int32" Nullable="false" />
+          <Property Name="IIDMEDICAMENTO" Type="Int32" Nullable="false" />
+          <Property Name="VDESCRIPCION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="MEDICAMENTO" Relationship="Self.FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO1" FromRole="CONTRAINDICACION_MEDICAMENTO" ToRole="MEDICAMENTO" />
+          <NavigationProperty Name="MEDICAMENTO1" Relationship="Self.FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO2" FromRole="CONTRAINDICACION_MEDICAMENTO" ToRole="MEDICAMENTO" />
+        </EntityType>
+        <EntityType Name="CONTRAINDICACION_SINTOMA">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+            <PropertyRef Name="IIDSINTOMA" />
+          </Key>
+          <Property Name="ICODIGO" Type="Int32" Nullable="false" />
+          <Property Name="IIDSINTOMA" Type="Int32" Nullable="false" />
+          <Property Name="VDESCRIPCION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="MEDICAMENTO" Relationship="Self.FK_CONTRAINDICACION_SINTOMA_MEDICAMENTO" FromRole="CONTRAINDICACION_SINTOMA" ToRole="MEDICAMENTO" />
+          <NavigationProperty Name="SINTOMA" Relationship="Self.FK_CONTRAINDICACION_SINTOMA_SINTOMA" FromRole="CONTRAINDICACION_SINTOMA" ToRole="SINTOMA" />
+        </EntityType>
+        <EntityType Name="DATOSPERSONALES">
+          <Key>
+            <PropertyRef Name="VCEDULA" />
+          </Key>
+          <Property Name="VCEDULA" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="VNOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="VPRIMERAPELLIDO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="VSEGUNDOPELLIDO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DTFECHANACIMIENTO" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="VGENERO" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="PACIENTE" Relationship="Self.FK_PACIENTE_DATOSPERSONALES" FromRole="DATOSPERSONALES" ToRole="PACIENTE" />
+          <NavigationProperty Name="USUARIO" Relationship="Self.FK_USUARIO_DatosPersonales" FromRole="DATOSPERSONALES" ToRole="USUARIO" />
+        </EntityType>
+        <EntityType Name="DIAGNOSTICO">
+          <Key>
+            <PropertyRef Name="IID" />
+          </Key>
+          <Property Name="IID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="VDIAGNOSTICO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TDESCRIPCION" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="CONTRAINDICACION_DIAGNOSTICO" Relationship="Self.FK_CONTRAINDICACION_DIAGNOSTICO_DIAGNOSTICO" FromRole="DIAGNOSTICO" ToRole="CONTRAINDICACION_DIAGNOSTICO" />
+          <NavigationProperty Name="DIAGNOSTICO1" Relationship="Self.FK_DIAGNOSTICO_DIAGNOSTICO" FromRole="DIAGNOSTICO" ToRole="DIAGNOSTICO1" />
+          <NavigationProperty Name="DIAGNOSTICO2" Relationship="Self.FK_DIAGNOSTICO_DIAGNOSTICO" FromRole="DIAGNOSTICO1" ToRole="DIAGNOSTICO" />
+          <NavigationProperty Name="INDICACION_DIAGNOSTICO" Relationship="Self.FK_INDICACION_DIAGNOSTICO_DIAGNOSTICO" FromRole="DIAGNOSTICO" ToRole="INDICACION_DIAGNOSTICO" />
+          <NavigationProperty Name="PACIENTE" Relationship="Self.FK_PACIENTE_DIAGNOSTICO" FromRole="DIAGNOSTICO" ToRole="PACIENTE" />
+          <NavigationProperty Name="PADECIMIENTO" Relationship="Self.FK_PADECIMIENTOS_DIAGNOSTICO" FromRole="DIAGNOSTICO" ToRole="PADECIMIENTO" />
+          <NavigationProperty Name="SINTOMA" Relationship="Self.DIAGNOSTICO_SINTOMA" FromRole="DIAGNOSTICO" ToRole="SINTOMA" />
+        </EntityType>
+        <EntityType Name="DOSIS">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+            <PropertyRef Name="VRANGO" />
+          </Key>
+          <Property Name="ICODIGO" Type="Int32" Nullable="false" />
+          <Property Name="VRANGO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DDOSIS" Type="Decimal" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="DMIN" Type="Decimal" Precision="18" Scale="4" Nullable="false" />
+          <Property Name="DMAX" Type="Decimal" Precision="18" Scale="4" Nullable="false" />
+          <NavigationProperty Name="MEDICAMENTO" Relationship="Self.FK_DOSIS_MEDICAMENTO" FromRole="DOSIS" ToRole="MEDICAMENTO" />
+        </EntityType>
+        <EntityType Name="INDICACION_DIAGNOSTICO">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+            <PropertyRef Name="IIDIAGNOSTICO" />
+          </Key>
+          <Property Name="ICODIGO" Type="Int32" Nullable="false" />
+          <Property Name="IIDIAGNOSTICO" Type="Int32" Nullable="false" />
+          <Property Name="VDESCRIPCION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="DIAGNOSTICO" Relationship="Self.FK_INDICACION_DIAGNOSTICO_DIAGNOSTICO" FromRole="INDICACION_DIAGNOSTICO" ToRole="DIAGNOSTICO" />
+          <NavigationProperty Name="MEDICAMENTO" Relationship="Self.FK_INDICACION_DIAGNOSTICO_MEDICAMENTO" FromRole="INDICACION_DIAGNOSTICO" ToRole="MEDICAMENTO" />
+        </EntityType>
+        <EntityType Name="INDICACION_SINTOMA">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+            <PropertyRef Name="ISINTOMA" />
+          </Key>
+          <Property Name="ICODIGO" Type="Int32" Nullable="false" />
+          <Property Name="ISINTOMA" Type="Int32" Nullable="false" />
+          <Property Name="VDESCRIPCION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="MEDICAMENTO" Relationship="Self.FK_INDICACION_SINTOMA_MEDICAMENTO" FromRole="INDICACION_SINTOMA" ToRole="MEDICAMENTO" />
+          <NavigationProperty Name="SINTOMA" Relationship="Self.FK_INDICACION_SINTOMA_SINTOMA" FromRole="INDICACION_SINTOMA" ToRole="SINTOMA" />
+        </EntityType>
+        <EntityType Name="MEDI_NOMBRE">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+            <PropertyRef Name="VNOMBRE" />
+          </Key>
+          <Property Name="ICODIGO" Type="Int32" Nullable="false" />
+          <Property Name="VNOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="MEDICAMENTO" Relationship="Self.FK_MEDI_NOMBRE_MEDICAMENTO" FromRole="MEDI_NOMBRE" ToRole="MEDICAMENTO" />
+        </EntityType>
+        <EntityType Name="MEDICAMENTO">
+          <Key>
+            <PropertyRef Name="ICODIGO" />
+          </Key>
+          <Property Name="ICODIGO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="VESTEROQUIMICA" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="VCOMPOSIION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="VDESCRIPCION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="BESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="CONTRAINDICACION_DIAGNOSTICO" Relationship="Self.FK_CONTRAINDICACION_DIAGNOSTICO_MEDICAMENTO" FromRole="MEDICAMENTO" ToRole="CONTRAINDICACION_DIAGNOSTICO" />
+          <NavigationProperty Name="CONTRAINDICACION_MEDICAMENTO" Relationship="Self.FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO1" FromRole="MEDICAMENTO" ToRole="CONTRAINDICACION_MEDICAMENTO" />
+          <NavigationProperty Name="CONTRAINDICACION_MEDICAMENTO1" Relationship="Self.FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO2" FromRole="MEDICAMENTO" ToRole="CONTRAINDICACION_MEDICAMENTO" />
+          <NavigationProperty Name="CONTRAINDICACION_SINTOMA" Relationship="Self.FK_CONTRAINDICACION_SINTOMA_MEDICAMENTO" FromRole="MEDICAMENTO" ToRole="CONTRAINDICACION_SINTOMA" />
+          <NavigationProperty Name="DOSIS" Relationship="Self.FK_DOSIS_MEDICAMENTO" FromRole="MEDICAMENTO" ToRole="DOSIS" />
+          <NavigationProperty Name="INDICACION_DIAGNOSTICO" Relationship="Self.FK_INDICACION_DIAGNOSTICO_MEDICAMENTO" FromRole="MEDICAMENTO" ToRole="INDICACION_DIAGNOSTICO" />
+          <NavigationProperty Name="INDICACION_SINTOMA" Relationship="Self.FK_INDICACION_SINTOMA_MEDICAMENTO" FromRole="MEDICAMENTO" ToRole="INDICACION_SINTOMA" />
+          <NavigationProperty Name="MEDI_NOMBRE" Relationship="Self.FK_MEDI_NOMBRE_MEDICAMENTO" FromRole="MEDICAMENTO" ToRole="MEDI_NOMBRE" />
+          <NavigationProperty Name="SINTOMA" Relationship="Self.EFECTO_ADVERSO" FromRole="MEDICAMENTO" ToRole="SINTOMA" />
+          <NavigationProperty Name="VIA_ADMINISTRACION" Relationship="Self.MEDICAMENTO_VIA" FromRole="MEDICAMENTO" ToRole="VIA_ADMINISTRACION" />
+          <NavigationProperty Name="PACIENTE_MEDICAMENTO" Relationship="MedicalModel.FK_PACIENTE_MEDICAMENTO_MEDICAMENTO" FromRole="MEDICAMENTO" ToRole="PACIENTE_MEDICAMENTO" />
+        </EntityType>
+        <EntityType Name="PACIENTE">
+          <Key>
+            <PropertyRef Name="VIDENTIFICACION" />
+          </Key>
+          <Property Name="VIDENTIFICACION" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IDIAGNOSTICO" Type="Int32" Nullable="false" />
+          <Property Name="IEDAD" Type="Int32" Nullable="false" />
+          <Property Name="DTALLA" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="DPESO" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <NavigationProperty Name="DATOSPERSONALES" Relationship="Self.FK_PACIENTE_DATOSPERSONALES" FromRole="PACIENTE" ToRole="DATOSPERSONALES" />
+          <NavigationProperty Name="DIAGNOSTICO" Relationship="Self.FK_PACIENTE_DIAGNOSTICO" FromRole="PACIENTE" ToRole="DIAGNOSTICO" />
+          <NavigationProperty Name="PACIENTE_SINTOMA" Relationship="Self.FK_PACIENTE_SINTOMA_PACIENTE" FromRole="PACIENTE" ToRole="PACIENTE_SINTOMA" />
+          <NavigationProperty Name="PADECIMIENTO" Relationship="Self.FK_PADECIMIENTO_PACIENTE" FromRole="PACIENTE" ToRole="PADECIMIENTO" />
+          <NavigationProperty Name="SIGNOS_VITALES" Relationship="Self.FK_SIGNOS_VITALES_PACIENTE" FromRole="PACIENTE" ToRole="SIGNOS_VITALES" />
+          <NavigationProperty Name="PACIENTE_MEDICAMENTO" Relationship="MedicalModel.FK_PACIENTE_MEDICAMENTO_PACIENTE" FromRole="PACIENTE" ToRole="PACIENTE_MEDICAMENTO" />
+        </EntityType>
+        <EntityType Name="PACIENTE_SINTOMA">
+          <Key>
+            <PropertyRef Name="VIDENTIFICACION" />
+            <PropertyRef Name="IIDSINTOMA" />
+          </Key>
+          <Property Name="VIDENTIFICACION" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IIDSINTOMA" Type="Int32" Nullable="false" />
+          <Property Name="BESTADO" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="PACIENTE" Relationship="Self.FK_PACIENTE_SINTOMA_PACIENTE" FromRole="PACIENTE_SINTOMA" ToRole="PACIENTE" />
+          <NavigationProperty Name="SINTOMA" Relationship="Self.FK_PACIENTE_SINTOMA_SINTOMA" FromRole="PACIENTE_SINTOMA" ToRole="SINTOMA" />
+        </EntityType>
+        <EntityType Name="PADECIMIENTO">
+          <Key>
+            <PropertyRef Name="IID" />
+          </Key>
+          <Property Name="IID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IIDPACIENTE" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IIDDIAGNOSTICO" Type="Int32" Nullable="false" />
+          <Property Name="DTFECHAINICIO" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="BESTADO" Type="Boolean" Nullable="false" />
+          <Property Name="DTFECHAFINALIZACION" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="DIAGNOSTICO" Relationship="Self.FK_PADECIMIENTOS_DIAGNOSTICO" FromRole="PADECIMIENTO" ToRole="DIAGNOSTICO" />
+          <NavigationProperty Name="PACIENTE" Relationship="Self.FK_PADECIMIENTO_PACIENTE" FromRole="PADECIMIENTO" ToRole="PACIENTE" />
+        </EntityType>
+        <EntityType Name="SIGNOS_VITALES">
+          <Key>
+            <PropertyRef Name="IIDPACIENTE" />
+            <PropertyRef Name="DTFECHA" />
+          </Key>
+          <Property Name="IIDPACIENTE" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DTFECHA" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="IPRESION" Type="Int32" />
+          <Property Name="DTEMPERATURA" Type="Decimal" Precision="18" Scale="4" />
+          <Property Name="ISATURACION" Type="Int32" />
+          <Property Name="IPULSO" Type="Int32" />
+          <NavigationProperty Name="PACIENTE" Relationship="Self.FK_SIGNOS_VITALES_PACIENTE" FromRole="SIGNOS_VITALES" ToRole="PACIENTE" />
+        </EntityType>
+        <EntityType Name="SINTOMA">
+          <Key>
+            <PropertyRef Name="IID" />
+          </Key>
+          <Property Name="IID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="VEFECTO" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="VDESCRIPCION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="CONTRAINDICACION_SINTOMA" Relationship="Self.FK_CONTRAINDICACION_SINTOMA_SINTOMA" FromRole="SINTOMA" ToRole="CONTRAINDICACION_SINTOMA" />
+          <NavigationProperty Name="INDICACION_SINTOMA" Relationship="Self.FK_INDICACION_SINTOMA_SINTOMA" FromRole="SINTOMA" ToRole="INDICACION_SINTOMA" />
+          <NavigationProperty Name="PACIENTE_SINTOMA" Relationship="Self.FK_PACIENTE_SINTOMA_SINTOMA" FromRole="SINTOMA" ToRole="PACIENTE_SINTOMA" />
+          <NavigationProperty Name="DIAGNOSTICO" Relationship="Self.DIAGNOSTICO_SINTOMA" FromRole="SINTOMA" ToRole="DIAGNOSTICO" />
+          <NavigationProperty Name="MEDICAMENTO" Relationship="Self.EFECTO_ADVERSO" FromRole="SINTOMA" ToRole="MEDICAMENTO" />
+        </EntityType>
+        <EntityType Name="USUARIO">
+          <Key>
+            <PropertyRef Name="USUARIO1" />
+            <PropertyRef Name="PASSWORD" />
+          </Key>
+          <Property Name="USUARIO1" Type="String" MaxLength="26" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PASSWORD" Type="String" MaxLength="26" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IDDATOSPERSONALES" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="VROL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="DATOSPERSONALES" Relationship="Self.FK_USUARIO_DatosPersonales" FromRole="USUARIO" ToRole="DATOSPERSONALES" />
+        </EntityType>
+        <EntityType Name="VIA_ADMINISTRACION">
+          <Key>
+            <PropertyRef Name="IID" />
+          </Key>
+          <Property Name="IID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="VNOMBRE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="VDESCRIPCION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="MEDICAMENTO" Relationship="Self.MEDICAMENTO_VIA" FromRole="VIA_ADMINISTRACION" ToRole="MEDICAMENTO" />
+        </EntityType>
+        <Association Name="FK_CONTRAINDICACION_DIAGNOSTICO_DIAGNOSTICO">
+          <End Role="DIAGNOSTICO" Type="Self.DIAGNOSTICO" Multiplicity="1" />
+          <End Role="CONTRAINDICACION_DIAGNOSTICO" Type="Self.CONTRAINDICACION_DIAGNOSTICO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DIAGNOSTICO">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="CONTRAINDICACION_DIAGNOSTICO">
+              <PropertyRef Name="IIDIAGNOSTICO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CONTRAINDICACION_DIAGNOSTICO_MEDICAMENTO">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="CONTRAINDICACION_DIAGNOSTICO" Type="Self.CONTRAINDICACION_DIAGNOSTICO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="CONTRAINDICACION_DIAGNOSTICO">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO1">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="CONTRAINDICACION_MEDICAMENTO" Type="Self.CONTRAINDICACION_MEDICAMENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="CONTRAINDICACION_MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO2">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="CONTRAINDICACION_MEDICAMENTO" Type="Self.CONTRAINDICACION_MEDICAMENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="CONTRAINDICACION_MEDICAMENTO">
+              <PropertyRef Name="IIDMEDICAMENTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CONTRAINDICACION_SINTOMA_MEDICAMENTO">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="CONTRAINDICACION_SINTOMA" Type="Self.CONTRAINDICACION_SINTOMA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="CONTRAINDICACION_SINTOMA">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CONTRAINDICACION_SINTOMA_SINTOMA">
+          <End Role="SINTOMA" Type="Self.SINTOMA" Multiplicity="1" />
+          <End Role="CONTRAINDICACION_SINTOMA" Type="Self.CONTRAINDICACION_SINTOMA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SINTOMA">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="CONTRAINDICACION_SINTOMA">
+              <PropertyRef Name="IIDSINTOMA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PACIENTE_DATOSPERSONALES">
+          <End Role="DATOSPERSONALES" Type="Self.DATOSPERSONALES" Multiplicity="1" />
+          <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="DATOSPERSONALES">
+              <PropertyRef Name="VCEDULA" />
+            </Principal>
+            <Dependent Role="PACIENTE">
+              <PropertyRef Name="VIDENTIFICACION" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_USUARIO_DatosPersonales">
+          <End Role="DATOSPERSONALES" Type="Self.DATOSPERSONALES" Multiplicity="1" />
+          <End Role="USUARIO" Type="Self.USUARIO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DATOSPERSONALES">
+              <PropertyRef Name="VCEDULA" />
+            </Principal>
+            <Dependent Role="USUARIO">
+              <PropertyRef Name="IDDATOSPERSONALES" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DIAGNOSTICO_DIAGNOSTICO">
+          <End Role="DIAGNOSTICO" Type="Self.DIAGNOSTICO" Multiplicity="1" />
+          <End Role="DIAGNOSTICO1" Type="Self.DIAGNOSTICO" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="DIAGNOSTICO">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="DIAGNOSTICO1">
+              <PropertyRef Name="IID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INDICACION_DIAGNOSTICO_DIAGNOSTICO">
+          <End Role="DIAGNOSTICO" Type="Self.DIAGNOSTICO" Multiplicity="1" />
+          <End Role="INDICACION_DIAGNOSTICO" Type="Self.INDICACION_DIAGNOSTICO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DIAGNOSTICO">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="INDICACION_DIAGNOSTICO">
+              <PropertyRef Name="IIDIAGNOSTICO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PACIENTE_DIAGNOSTICO">
+          <End Role="DIAGNOSTICO" Type="Self.DIAGNOSTICO" Multiplicity="1" />
+          <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DIAGNOSTICO">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="PACIENTE">
+              <PropertyRef Name="IDIAGNOSTICO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PADECIMIENTOS_DIAGNOSTICO">
+          <End Role="DIAGNOSTICO" Type="Self.DIAGNOSTICO" Multiplicity="1" />
+          <End Role="PADECIMIENTO" Type="Self.PADECIMIENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DIAGNOSTICO">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="PADECIMIENTO">
+              <PropertyRef Name="IIDDIAGNOSTICO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DOSIS_MEDICAMENTO">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="DOSIS" Type="Self.DOSIS" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="DOSIS">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INDICACION_DIAGNOSTICO_MEDICAMENTO">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="INDICACION_DIAGNOSTICO" Type="Self.INDICACION_DIAGNOSTICO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="INDICACION_DIAGNOSTICO">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INDICACION_SINTOMA_MEDICAMENTO">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="INDICACION_SINTOMA" Type="Self.INDICACION_SINTOMA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="INDICACION_SINTOMA">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_INDICACION_SINTOMA_SINTOMA">
+          <End Role="SINTOMA" Type="Self.SINTOMA" Multiplicity="1" />
+          <End Role="INDICACION_SINTOMA" Type="Self.INDICACION_SINTOMA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SINTOMA">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="INDICACION_SINTOMA">
+              <PropertyRef Name="ISINTOMA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_MEDI_NOMBRE_MEDICAMENTO">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="1" />
+          <End Role="MEDI_NOMBRE" Type="Self.MEDI_NOMBRE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="MEDI_NOMBRE">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PACIENTE_SINTOMA_PACIENTE">
+          <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="1" />
+          <End Role="PACIENTE_SINTOMA" Type="Self.PACIENTE_SINTOMA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PACIENTE">
+              <PropertyRef Name="VIDENTIFICACION" />
+            </Principal>
+            <Dependent Role="PACIENTE_SINTOMA">
+              <PropertyRef Name="VIDENTIFICACION" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PADECIMIENTO_PACIENTE">
+          <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="1" />
+          <End Role="PADECIMIENTO" Type="Self.PADECIMIENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PACIENTE">
+              <PropertyRef Name="VIDENTIFICACION" />
+            </Principal>
+            <Dependent Role="PADECIMIENTO">
+              <PropertyRef Name="IIDPACIENTE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SIGNOS_VITALES_PACIENTE">
+          <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="1" />
+          <End Role="SIGNOS_VITALES" Type="Self.SIGNOS_VITALES" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PACIENTE">
+              <PropertyRef Name="VIDENTIFICACION" />
+            </Principal>
+            <Dependent Role="SIGNOS_VITALES">
+              <PropertyRef Name="IIDPACIENTE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PACIENTE_SINTOMA_SINTOMA">
+          <End Role="SINTOMA" Type="Self.SINTOMA" Multiplicity="1" />
+          <End Role="PACIENTE_SINTOMA" Type="Self.PACIENTE_SINTOMA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SINTOMA">
+              <PropertyRef Name="IID" />
+            </Principal>
+            <Dependent Role="PACIENTE_SINTOMA">
+              <PropertyRef Name="IIDSINTOMA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="DIAGNOSTICO_SINTOMA">
+          <End Role="DIAGNOSTICO" Type="Self.DIAGNOSTICO" Multiplicity="*" />
+          <End Role="SINTOMA" Type="Self.SINTOMA" Multiplicity="*" />
+        </Association>
+        <Association Name="EFECTO_ADVERSO">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="*" />
+          <End Role="SINTOMA" Type="Self.SINTOMA" Multiplicity="*" />
+        </Association>
+        <Association Name="MEDICAMENTO_VIA">
+          <End Role="MEDICAMENTO" Type="Self.MEDICAMENTO" Multiplicity="*" />
+          <End Role="VIA_ADMINISTRACION" Type="Self.VIA_ADMINISTRACION" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="MedicalEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CONTRAINDICACION_DIAGNOSTICO" EntityType="Self.CONTRAINDICACION_DIAGNOSTICO" />
+          <EntitySet Name="CONTRAINDICACION_MEDICAMENTO" EntityType="Self.CONTRAINDICACION_MEDICAMENTO" />
+          <EntitySet Name="CONTRAINDICACION_SINTOMA" EntityType="Self.CONTRAINDICACION_SINTOMA" />
+          <EntitySet Name="DATOSPERSONALES" EntityType="Self.DATOSPERSONALES" />
+          <EntitySet Name="DIAGNOSTICO" EntityType="Self.DIAGNOSTICO" />
+          <EntitySet Name="DOSIS" EntityType="Self.DOSIS" />
+          <EntitySet Name="INDICACION_DIAGNOSTICO" EntityType="Self.INDICACION_DIAGNOSTICO" />
+          <EntitySet Name="INDICACION_SINTOMA" EntityType="Self.INDICACION_SINTOMA" />
+          <EntitySet Name="MEDI_NOMBRE" EntityType="Self.MEDI_NOMBRE" />
+          <EntitySet Name="MEDICAMENTO" EntityType="Self.MEDICAMENTO" />
+          <EntitySet Name="PACIENTE" EntityType="Self.PACIENTE" />
+          <EntitySet Name="PACIENTE_SINTOMA" EntityType="Self.PACIENTE_SINTOMA" />
+          <EntitySet Name="PADECIMIENTO" EntityType="Self.PADECIMIENTO" />
+          <EntitySet Name="SIGNOS_VITALES" EntityType="Self.SIGNOS_VITALES" />
+          <EntitySet Name="SINTOMA" EntityType="Self.SINTOMA" />
+          <EntitySet Name="USUARIO" EntityType="Self.USUARIO" />
+          <EntitySet Name="VIA_ADMINISTRACION" EntityType="Self.VIA_ADMINISTRACION" />
+          <AssociationSet Name="FK_CONTRAINDICACION_DIAGNOSTICO_DIAGNOSTICO" Association="Self.FK_CONTRAINDICACION_DIAGNOSTICO_DIAGNOSTICO">
+            <End Role="DIAGNOSTICO" EntitySet="DIAGNOSTICO" />
+            <End Role="CONTRAINDICACION_DIAGNOSTICO" EntitySet="CONTRAINDICACION_DIAGNOSTICO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CONTRAINDICACION_DIAGNOSTICO_MEDICAMENTO" Association="Self.FK_CONTRAINDICACION_DIAGNOSTICO_MEDICAMENTO">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="CONTRAINDICACION_DIAGNOSTICO" EntitySet="CONTRAINDICACION_DIAGNOSTICO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO1" Association="Self.FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO1">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="CONTRAINDICACION_MEDICAMENTO" EntitySet="CONTRAINDICACION_MEDICAMENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO2" Association="Self.FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO2">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="CONTRAINDICACION_MEDICAMENTO" EntitySet="CONTRAINDICACION_MEDICAMENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CONTRAINDICACION_SINTOMA_MEDICAMENTO" Association="Self.FK_CONTRAINDICACION_SINTOMA_MEDICAMENTO">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="CONTRAINDICACION_SINTOMA" EntitySet="CONTRAINDICACION_SINTOMA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CONTRAINDICACION_SINTOMA_SINTOMA" Association="Self.FK_CONTRAINDICACION_SINTOMA_SINTOMA">
+            <End Role="SINTOMA" EntitySet="SINTOMA" />
+            <End Role="CONTRAINDICACION_SINTOMA" EntitySet="CONTRAINDICACION_SINTOMA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PACIENTE_DATOSPERSONALES" Association="Self.FK_PACIENTE_DATOSPERSONALES">
+            <End Role="DATOSPERSONALES" EntitySet="DATOSPERSONALES" />
+            <End Role="PACIENTE" EntitySet="PACIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_USUARIO_DatosPersonales" Association="Self.FK_USUARIO_DatosPersonales">
+            <End Role="DATOSPERSONALES" EntitySet="DATOSPERSONALES" />
+            <End Role="USUARIO" EntitySet="USUARIO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DIAGNOSTICO_DIAGNOSTICO" Association="Self.FK_DIAGNOSTICO_DIAGNOSTICO">
+            <End Role="DIAGNOSTICO" EntitySet="DIAGNOSTICO" />
+            <End Role="DIAGNOSTICO1" EntitySet="DIAGNOSTICO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INDICACION_DIAGNOSTICO_DIAGNOSTICO" Association="Self.FK_INDICACION_DIAGNOSTICO_DIAGNOSTICO">
+            <End Role="DIAGNOSTICO" EntitySet="DIAGNOSTICO" />
+            <End Role="INDICACION_DIAGNOSTICO" EntitySet="INDICACION_DIAGNOSTICO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PACIENTE_DIAGNOSTICO" Association="Self.FK_PACIENTE_DIAGNOSTICO">
+            <End Role="DIAGNOSTICO" EntitySet="DIAGNOSTICO" />
+            <End Role="PACIENTE" EntitySet="PACIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PADECIMIENTOS_DIAGNOSTICO" Association="Self.FK_PADECIMIENTOS_DIAGNOSTICO">
+            <End Role="DIAGNOSTICO" EntitySet="DIAGNOSTICO" />
+            <End Role="PADECIMIENTO" EntitySet="PADECIMIENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DOSIS_MEDICAMENTO" Association="Self.FK_DOSIS_MEDICAMENTO">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="DOSIS" EntitySet="DOSIS" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INDICACION_DIAGNOSTICO_MEDICAMENTO" Association="Self.FK_INDICACION_DIAGNOSTICO_MEDICAMENTO">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="INDICACION_DIAGNOSTICO" EntitySet="INDICACION_DIAGNOSTICO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INDICACION_SINTOMA_MEDICAMENTO" Association="Self.FK_INDICACION_SINTOMA_MEDICAMENTO">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="INDICACION_SINTOMA" EntitySet="INDICACION_SINTOMA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_INDICACION_SINTOMA_SINTOMA" Association="Self.FK_INDICACION_SINTOMA_SINTOMA">
+            <End Role="SINTOMA" EntitySet="SINTOMA" />
+            <End Role="INDICACION_SINTOMA" EntitySet="INDICACION_SINTOMA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_MEDI_NOMBRE_MEDICAMENTO" Association="Self.FK_MEDI_NOMBRE_MEDICAMENTO">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="MEDI_NOMBRE" EntitySet="MEDI_NOMBRE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PACIENTE_SINTOMA_PACIENTE" Association="Self.FK_PACIENTE_SINTOMA_PACIENTE">
+            <End Role="PACIENTE" EntitySet="PACIENTE" />
+            <End Role="PACIENTE_SINTOMA" EntitySet="PACIENTE_SINTOMA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PADECIMIENTO_PACIENTE" Association="Self.FK_PADECIMIENTO_PACIENTE">
+            <End Role="PACIENTE" EntitySet="PACIENTE" />
+            <End Role="PADECIMIENTO" EntitySet="PADECIMIENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SIGNOS_VITALES_PACIENTE" Association="Self.FK_SIGNOS_VITALES_PACIENTE">
+            <End Role="PACIENTE" EntitySet="PACIENTE" />
+            <End Role="SIGNOS_VITALES" EntitySet="SIGNOS_VITALES" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PACIENTE_SINTOMA_SINTOMA" Association="Self.FK_PACIENTE_SINTOMA_SINTOMA">
+            <End Role="SINTOMA" EntitySet="SINTOMA" />
+            <End Role="PACIENTE_SINTOMA" EntitySet="PACIENTE_SINTOMA" />
+          </AssociationSet>
+          <AssociationSet Name="DIAGNOSTICO_SINTOMA" Association="Self.DIAGNOSTICO_SINTOMA">
+            <End Role="DIAGNOSTICO" EntitySet="DIAGNOSTICO" />
+            <End Role="SINTOMA" EntitySet="SINTOMA" />
+          </AssociationSet>
+          <AssociationSet Name="EFECTO_ADVERSO" Association="Self.EFECTO_ADVERSO">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="SINTOMA" EntitySet="SINTOMA" />
+          </AssociationSet>
+          <AssociationSet Name="MEDICAMENTO_VIA" Association="Self.MEDICAMENTO_VIA">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="VIA_ADMINISTRACION" EntitySet="VIA_ADMINISTRACION" />
+          </AssociationSet>
+          <FunctionImport Name="EstadoPresionAlta">
+          <Parameter Name="ID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="EstadoPresionBaja">
+          <Parameter Name="ID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="EstadoPresionNormal">
+          <Parameter Name="ID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="EstadoPulsoAlta">
+          <Parameter Name="ID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="EstadoPulsoBaja">
+          <Parameter Name="ID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="EstadoPulsoNormal">
+          <Parameter Name="ID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="EstadoSaturacionAlta">
+          <Parameter Name="ID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="EstadoSaturacionBaja">
+          <Parameter Name="ID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="EstadoSaturacionNormal">
+          <Parameter Name="ID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="EstadoTemperaturaAlta">
+          <Parameter Name="ID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="EstadoTemperaturaBaja">
+          <Parameter Name="ID" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="EstadoTemperaturaNormal">
+          <Parameter Name="ID" Mode="In" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="PACIENTE_MEDICAMENTO" EntityType="MedicalModel.PACIENTE_MEDICAMENTO" />
+          <AssociationSet Name="FK_PACIENTE_MEDICAMENTO_MEDICAMENTO" Association="MedicalModel.FK_PACIENTE_MEDICAMENTO_MEDICAMENTO">
+            <End Role="MEDICAMENTO" EntitySet="MEDICAMENTO" />
+            <End Role="PACIENTE_MEDICAMENTO" EntitySet="PACIENTE_MEDICAMENTO" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PACIENTE_MEDICAMENTO_PACIENTE" Association="MedicalModel.FK_PACIENTE_MEDICAMENTO_PACIENTE">
+            <End Role="PACIENTE" EntitySet="PACIENTE" />
+            <End Role="PACIENTE_MEDICAMENTO" EntitySet="PACIENTE_MEDICAMENTO" />
+          </AssociationSet>
+          <EntitySet Name="VistaPacienteMedicamento" EntityType="MedicalModel.VistaPacienteMedicamento" />
+          <EntitySet Name="VistaMedicamentosContraindicacion" EntityType="MedicalModel.VistaMedicamentosContraindicacion" />
+          </EntityContainer>
+        <EntityType Name="PACIENTE_MEDICAMENTO">
+          <Key>
+            <PropertyRef Name="VIDENTIFICACION" />
+            <PropertyRef Name="ICODIGO" />
+          </Key>
+          <Property Name="VIDENTIFICACION" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="ICODIGO" Type="Int32" Nullable="false" />
+          <Property Name="DDOSIS" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="VDESCRIPCION" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="VVIAADMINISTRACION" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="VRANGO" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="MEDICAMENTO" Relationship="MedicalModel.FK_PACIENTE_MEDICAMENTO_MEDICAMENTO" FromRole="PACIENTE_MEDICAMENTO" ToRole="MEDICAMENTO" />
+          <NavigationProperty Name="PACIENTE" Relationship="MedicalModel.FK_PACIENTE_MEDICAMENTO_PACIENTE" FromRole="PACIENTE_MEDICAMENTO" ToRole="PACIENTE" />
+        </EntityType>
+        <Association Name="FK_PACIENTE_MEDICAMENTO_MEDICAMENTO">
+          <End Type="MedicalModel.MEDICAMENTO" Role="MEDICAMENTO" Multiplicity="1" />
+          <End Type="MedicalModel.PACIENTE_MEDICAMENTO" Role="PACIENTE_MEDICAMENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Principal>
+            <Dependent Role="PACIENTE_MEDICAMENTO">
+              <PropertyRef Name="ICODIGO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PACIENTE_MEDICAMENTO_PACIENTE">
+          <End Type="MedicalModel.PACIENTE" Role="PACIENTE" Multiplicity="1" />
+          <End Type="MedicalModel.PACIENTE_MEDICAMENTO" Role="PACIENTE_MEDICAMENTO" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PACIENTE">
+              <PropertyRef Name="VIDENTIFICACION" />
+            </Principal>
+            <Dependent Role="PACIENTE_MEDICAMENTO">
+              <PropertyRef Name="VIDENTIFICACION" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="VistaPacienteMedicamento">
+          <Key>
+            <PropertyRef Name="Cedula" />
+            <PropertyRef Name="Dosis" />
+            <PropertyRef Name="Rango" />
+            <PropertyRef Name="Via_Administracion" />
+          </Key>
+          <Property Name="Cedula" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="Medicamento" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Dosis" Type="Decimal" Nullable="false" Precision="18" Scale="4" />
+          <Property Name="Rango" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Via_Administracion" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="VistaMedicamentosContraindicacion">
+          <Key>
+            <PropertyRef Name="Codigo" />
+          </Key>
+          <Property Name="Codigo" Type="Int32" Nullable="false" />
+          <Property Name="Medicamento" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MedicalModelStoreContainer" CdmEntityContainer="MedicalEntities">
+          <EntitySetMapping Name="CONTRAINDICACION_DIAGNOSTICO">
+            <EntityTypeMapping TypeName="MedicalModel.CONTRAINDICACION_DIAGNOSTICO">
+              <MappingFragment StoreEntitySet="CONTRAINDICACION_DIAGNOSTICO">
+                <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+                <ScalarProperty Name="IIDIAGNOSTICO" ColumnName="IIDIAGNOSTICO" />
+                <ScalarProperty Name="VDESCRIPCION" ColumnName="VDESCRIPCION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CONTRAINDICACION_MEDICAMENTO">
+            <EntityTypeMapping TypeName="MedicalModel.CONTRAINDICACION_MEDICAMENTO">
+              <MappingFragment StoreEntitySet="CONTRAINDICACION_MEDICAMENTO">
+                <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+                <ScalarProperty Name="IIDMEDICAMENTO" ColumnName="IIDMEDICAMENTO" />
+                <ScalarProperty Name="VDESCRIPCION" ColumnName="VDESCRIPCION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CONTRAINDICACION_SINTOMA">
+            <EntityTypeMapping TypeName="MedicalModel.CONTRAINDICACION_SINTOMA">
+              <MappingFragment StoreEntitySet="CONTRAINDICACION_SINTOMA">
+                <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+                <ScalarProperty Name="IIDSINTOMA" ColumnName="IIDSINTOMA" />
+                <ScalarProperty Name="VDESCRIPCION" ColumnName="VDESCRIPCION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DATOSPERSONALES">
+            <EntityTypeMapping TypeName="MedicalModel.DATOSPERSONALES">
+              <MappingFragment StoreEntitySet="DATOSPERSONALES">
+                <ScalarProperty Name="VCEDULA" ColumnName="VCEDULA" />
+                <ScalarProperty Name="VNOMBRE" ColumnName="VNOMBRE" />
+                <ScalarProperty Name="VPRIMERAPELLIDO" ColumnName="VPRIMERAPELLIDO" />
+                <ScalarProperty Name="VSEGUNDOPELLIDO" ColumnName="VSEGUNDOPELLIDO" />
+                <ScalarProperty Name="DTFECHANACIMIENTO" ColumnName="DTFECHANACIMIENTO" />
+                <ScalarProperty Name="VGENERO" ColumnName="VGENERO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DIAGNOSTICO">
+            <EntityTypeMapping TypeName="MedicalModel.DIAGNOSTICO">
+              <MappingFragment StoreEntitySet="DIAGNOSTICO">
+                <ScalarProperty Name="IID" ColumnName="IID" />
+                <ScalarProperty Name="VDIAGNOSTICO" ColumnName="VDIAGNOSTICO" />
+                <ScalarProperty Name="TDESCRIPCION" ColumnName="TDESCRIPCION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DOSIS">
+            <EntityTypeMapping TypeName="MedicalModel.DOSIS">
+              <MappingFragment StoreEntitySet="DOSIS">
+                <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+                <ScalarProperty Name="VRANGO" ColumnName="VRANGO" />
+                <ScalarProperty Name="DDOSIS" ColumnName="DDOSIS" />
+                <ScalarProperty Name="DMIN" ColumnName="DMIN" />
+                <ScalarProperty Name="DMAX" ColumnName="DMAX" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="INDICACION_DIAGNOSTICO">
+            <EntityTypeMapping TypeName="MedicalModel.INDICACION_DIAGNOSTICO">
+              <MappingFragment StoreEntitySet="INDICACION_DIAGNOSTICO">
+                <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+                <ScalarProperty Name="IIDIAGNOSTICO" ColumnName="IIDIAGNOSTICO" />
+                <ScalarProperty Name="VDESCRIPCION" ColumnName="VDESCRIPCION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="INDICACION_SINTOMA">
+            <EntityTypeMapping TypeName="MedicalModel.INDICACION_SINTOMA">
+              <MappingFragment StoreEntitySet="INDICACION_SINTOMA">
+                <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+                <ScalarProperty Name="ISINTOMA" ColumnName="ISINTOMA" />
+                <ScalarProperty Name="VDESCRIPCION" ColumnName="VDESCRIPCION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MEDI_NOMBRE">
+            <EntityTypeMapping TypeName="MedicalModel.MEDI_NOMBRE">
+              <MappingFragment StoreEntitySet="MEDI_NOMBRE">
+                <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+                <ScalarProperty Name="VNOMBRE" ColumnName="VNOMBRE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MEDICAMENTO">
+            <EntityTypeMapping TypeName="MedicalModel.MEDICAMENTO">
+              <MappingFragment StoreEntitySet="MEDICAMENTO">
+                <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+                <ScalarProperty Name="VESTEROQUIMICA" ColumnName="VESTEROQUIMICA" />
+                <ScalarProperty Name="VCOMPOSIION" ColumnName="VCOMPOSIION" />
+                <ScalarProperty Name="VDESCRIPCION" ColumnName="VDESCRIPCION" />
+                <ScalarProperty Name="BESTADO" ColumnName="BESTADO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PACIENTE">
+            <EntityTypeMapping TypeName="MedicalModel.PACIENTE">
+              <MappingFragment StoreEntitySet="PACIENTE">
+                <ScalarProperty Name="VIDENTIFICACION" ColumnName="VIDENTIFICACION" />
+                <ScalarProperty Name="IDIAGNOSTICO" ColumnName="IDIAGNOSTICO" />
+                <ScalarProperty Name="IEDAD" ColumnName="IEDAD" />
+                <ScalarProperty Name="DTALLA" ColumnName="DTALLA" />
+                <ScalarProperty Name="DPESO" ColumnName="DPESO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PACIENTE_SINTOMA">
+            <EntityTypeMapping TypeName="MedicalModel.PACIENTE_SINTOMA">
+              <MappingFragment StoreEntitySet="PACIENTE_SINTOMA">
+                <ScalarProperty Name="VIDENTIFICACION" ColumnName="VIDENTIFICACION" />
+                <ScalarProperty Name="IIDSINTOMA" ColumnName="IIDSINTOMA" />
+                <ScalarProperty Name="BESTADO" ColumnName="BESTADO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PADECIMIENTO">
+            <EntityTypeMapping TypeName="MedicalModel.PADECIMIENTO">
+              <MappingFragment StoreEntitySet="PADECIMIENTO">
+                <ScalarProperty Name="IID" ColumnName="IID" />
+                <ScalarProperty Name="IIDPACIENTE" ColumnName="IIDPACIENTE" />
+                <ScalarProperty Name="IIDDIAGNOSTICO" ColumnName="IIDDIAGNOSTICO" />
+                <ScalarProperty Name="DTFECHAINICIO" ColumnName="DTFECHAINICIO" />
+                <ScalarProperty Name="BESTADO" ColumnName="BESTADO" />
+                <ScalarProperty Name="DTFECHAFINALIZACION" ColumnName="DTFECHAFINALIZACION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SIGNOS_VITALES">
+            <EntityTypeMapping TypeName="MedicalModel.SIGNOS_VITALES">
+              <MappingFragment StoreEntitySet="SIGNOS_VITALES">
+                <ScalarProperty Name="IIDPACIENTE" ColumnName="IIDPACIENTE" />
+                <ScalarProperty Name="DTFECHA" ColumnName="DTFECHA" />
+                <ScalarProperty Name="IPRESION" ColumnName="IPRESION" />
+                <ScalarProperty Name="DTEMPERATURA" ColumnName="DTEMPERATURA" />
+                <ScalarProperty Name="ISATURACION" ColumnName="ISATURACION" />
+                <ScalarProperty Name="IPULSO" ColumnName="IPULSO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SINTOMA">
+            <EntityTypeMapping TypeName="MedicalModel.SINTOMA">
+              <MappingFragment StoreEntitySet="SINTOMA">
+                <ScalarProperty Name="IID" ColumnName="IID" />
+                <ScalarProperty Name="VEFECTO" ColumnName="VEFECTO" />
+                <ScalarProperty Name="VDESCRIPCION" ColumnName="VDESCRIPCION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="USUARIO">
+            <EntityTypeMapping TypeName="MedicalModel.USUARIO">
+              <MappingFragment StoreEntitySet="USUARIO">
+                <ScalarProperty Name="USUARIO1" ColumnName="USUARIO" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="IDDATOSPERSONALES" ColumnName="IDDATOSPERSONALES" />
+                <ScalarProperty Name="VROL" ColumnName="VROL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VIA_ADMINISTRACION">
+            <EntityTypeMapping TypeName="MedicalModel.VIA_ADMINISTRACION">
+              <MappingFragment StoreEntitySet="VIA_ADMINISTRACION">
+                <ScalarProperty Name="IID" ColumnName="IID" />
+                <ScalarProperty Name="VNOMBRE" ColumnName="VNOMBRE" />
+                <ScalarProperty Name="VDESCRIPCION" ColumnName="VDESCRIPCION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="DIAGNOSTICO_SINTOMA" TypeName="MedicalModel.DIAGNOSTICO_SINTOMA" StoreEntitySet="DIAGNOSTICO_SINTOMA">
+            <EndProperty Name="DIAGNOSTICO">
+              <ScalarProperty Name="IID" ColumnName="IIDDIAGNOSTICO" />
+            </EndProperty>
+            <EndProperty Name="SINTOMA">
+              <ScalarProperty Name="IID" ColumnName="IIDSINTOMA" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="EFECTO_ADVERSO" TypeName="MedicalModel.EFECTO_ADVERSO" StoreEntitySet="EFECTO_ADVERSO">
+            <EndProperty Name="MEDICAMENTO">
+              <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+            </EndProperty>
+            <EndProperty Name="SINTOMA">
+              <ScalarProperty Name="IID" ColumnName="IIDSINTOMA" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="MEDICAMENTO_VIA" TypeName="MedicalModel.MEDICAMENTO_VIA" StoreEntitySet="MEDICAMENTO_VIA">
+            <EndProperty Name="MEDICAMENTO">
+              <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+            </EndProperty>
+            <EndProperty Name="VIA_ADMINISTRACION">
+              <ScalarProperty Name="IID" ColumnName="IIDVIA" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <FunctionImportMapping FunctionImportName="EstadoPresionAlta" FunctionName="MedicalModel.Store.EstadoPresionAlta" />
+          <FunctionImportMapping FunctionImportName="EstadoPresionBaja" FunctionName="MedicalModel.Store.EstadoPresionBaja" />
+          <FunctionImportMapping FunctionImportName="EstadoPresionNormal" FunctionName="MedicalModel.Store.EstadoPresionNormal" />
+          <FunctionImportMapping FunctionImportName="EstadoPulsoAlta" FunctionName="MedicalModel.Store.EstadoPulsoAlta" />
+          <FunctionImportMapping FunctionImportName="EstadoPulsoBaja" FunctionName="MedicalModel.Store.EstadoPulsoBaja" />
+          <FunctionImportMapping FunctionImportName="EstadoPulsoNormal" FunctionName="MedicalModel.Store.EstadoPulsoNormal" />
+          <FunctionImportMapping FunctionImportName="EstadoSaturacionAlta" FunctionName="MedicalModel.Store.EstadoSaturacionAlta" />
+          <FunctionImportMapping FunctionImportName="EstadoSaturacionBaja" FunctionName="MedicalModel.Store.EstadoSaturacionBaja" />
+          <FunctionImportMapping FunctionImportName="EstadoSaturacionNormal" FunctionName="MedicalModel.Store.EstadoSaturacionNormal" />
+          <FunctionImportMapping FunctionImportName="EstadoTemperaturaAlta" FunctionName="MedicalModel.Store.EstadoTemperaturaAlta" />
+          <FunctionImportMapping FunctionImportName="EstadoTemperaturaBaja" FunctionName="MedicalModel.Store.EstadoTemperaturaBaja" />
+          <FunctionImportMapping FunctionImportName="EstadoTemperaturaNormal" FunctionName="MedicalModel.Store.EstadoTemperaturaNormal" />
+          <EntitySetMapping Name="PACIENTE_MEDICAMENTO">
+            <EntityTypeMapping TypeName="MedicalModel.PACIENTE_MEDICAMENTO">
+              <MappingFragment StoreEntitySet="PACIENTE_MEDICAMENTO">
+                <ScalarProperty Name="VRANGO" ColumnName="VRANGO" />
+                <ScalarProperty Name="VVIAADMINISTRACION" ColumnName="VVIAADMINISTRACION" />
+                <ScalarProperty Name="VDESCRIPCION" ColumnName="VDESCRIPCION" />
+                <ScalarProperty Name="DDOSIS" ColumnName="DDOSIS" />
+                <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+                <ScalarProperty Name="VIDENTIFICACION" ColumnName="VIDENTIFICACION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VistaPacienteMedicamento">
+            <EntityTypeMapping TypeName="MedicalModel.VistaPacienteMedicamento">
+              <MappingFragment StoreEntitySet="VistaPacienteMedicamento">
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Via_Administracion" ColumnName="Via_Administracion" />
+                <ScalarProperty Name="Rango" ColumnName="Rango" />
+                <ScalarProperty Name="Dosis" ColumnName="Dosis" />
+                <ScalarProperty Name="Medicamento" ColumnName="Medicamento" />
+                <ScalarProperty Name="Cedula" ColumnName="Cedula" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VistaMedicamentosContraindicacion">
+            <EntityTypeMapping TypeName="MedicalModel.VistaMedicamentosContraindicacion">
+              <MappingFragment StoreEntitySet="VistaMedicamentosContraindicacion">
+                <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+                <ScalarProperty Name="Medicamento" ColumnName="Medicamento" />
+                <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

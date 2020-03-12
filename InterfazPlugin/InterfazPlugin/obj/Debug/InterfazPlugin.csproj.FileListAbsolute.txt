@@ -1,0 +1,22 @@
+c:\users\david\source\repos\InterfazPlugin\InterfazPlugin\bin\Debug\InterfazPlugin.dll
+c:\users\david\source\repos\InterfazPlugin\InterfazPlugin\bin\Debug\InterfazPlugin.pdb
+c:\users\david\source\repos\InterfazPlugin\InterfazPlugin\obj\Debug\InterfazPlugin.csproj.CoreCompileInputs.cache
+c:\users\david\source\repos\InterfazPlugin\InterfazPlugin\obj\Debug\InterfazPlugin.dll
+c:\users\david\source\repos\InterfazPlugin\InterfazPlugin\obj\Debug\InterfazPlugin.pdb
+C:\Users\David\Desktop\InterfazPlugin\InterfazPlugin\bin\Debug\InterfazPlugin.dll
+C:\Users\David\Desktop\InterfazPlugin\InterfazPlugin\bin\Debug\InterfazPlugin.pdb
+C:\Users\David\Desktop\InterfazPlugin\InterfazPlugin\obj\Debug\InterfazPlugin.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\InterfazPlugin\InterfazPlugin\obj\Debug\InterfazPlugin.dll
+C:\Users\David\Desktop\InterfazPlugin\InterfazPlugin\obj\Debug\InterfazPlugin.pdb
+C:\Users\David\Desktop\InterfazPlugin\InterfazPlugin\obj\Debug\InterfazPlugin.csprojResolveAssemblyReference.cache
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\InterfazPlugin\InterfazPlugin\bin\Debug\InterfazPlugin.dll
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\InterfazPlugin\InterfazPlugin\bin\Debug\InterfazPlugin.pdb
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\InterfazPlugin\InterfazPlugin\obj\Debug\InterfazPlugin.csprojResolveAssemblyReference.cache
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\InterfazPlugin\InterfazPlugin\obj\Debug\InterfazPlugin.dll
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\InterfazPlugin\InterfazPlugin\obj\Debug\InterfazPlugin.pdb
+C:\Users\David\Desktop\backMedical3\InterfazPlugin\InterfazPlugin\bin\Debug\InterfazPlugin.dll
+C:\Users\David\Desktop\backMedical3\InterfazPlugin\InterfazPlugin\bin\Debug\InterfazPlugin.pdb
+C:\Users\David\Desktop\backMedical3\InterfazPlugin\InterfazPlugin\obj\Debug\InterfazPlugin.csprojResolveAssemblyReference.cache
+C:\Users\David\Desktop\backMedical3\InterfazPlugin\InterfazPlugin\obj\Debug\InterfazPlugin.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\backMedical3\InterfazPlugin\InterfazPlugin\obj\Debug\InterfazPlugin.dll
+C:\Users\David\Desktop\backMedical3\InterfazPlugin\InterfazPlugin\obj\Debug\InterfazPlugin.pdb

@@ -1,0 +1,58 @@
+c:\users\david\source\repos\Medica\BS\bin\Debug\BS.dll
+c:\users\david\source\repos\Medica\BS\bin\Debug\BS.pdb
+c:\users\david\source\repos\Medica\BS\obj\Debug\BS.csproj.CoreCompileInputs.cache
+c:\users\david\source\repos\Medica\BS\obj\Debug\BS.dll
+c:\users\david\source\repos\Medica\BS\obj\Debug\BS.pdb
+C:\Users\David\Desktop\Medica\BS\bin\Debug\BS.dll
+C:\Users\David\Desktop\Medica\BS\bin\Debug\BS.pdb
+C:\Users\David\Desktop\Medica\BS\bin\Debug\DAL.dll
+C:\Users\David\Desktop\Medica\BS\bin\Debug\InterfazPlugin.dll
+C:\Users\David\Desktop\Medica\BS\bin\Debug\EntityFramework.dll
+C:\Users\David\Desktop\Medica\BS\bin\Debug\DAL.pdb
+C:\Users\David\Desktop\Medica\BS\bin\Debug\DAL.dll.config
+C:\Users\David\Desktop\Medica\BS\bin\Debug\InterfazPlugin.pdb
+C:\Users\David\Desktop\Medica\BS\bin\Debug\EntityFramework.xml
+C:\Users\David\Desktop\Medica\BS\obj\Debug\BS.csprojResolveAssemblyReference.cache
+C:\Users\David\Desktop\Medica\BS\obj\Debug\BS.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\Medica\BS\obj\Debug\BS.dll
+C:\Users\David\Desktop\Medica\BS\obj\Debug\BS.pdb
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\BS\obj\Debug\BS.csprojResolveAssemblyReference.cache
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\BS\bin\Debug\BS.dll
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\BS\bin\Debug\BS.pdb
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\BS\bin\Debug\DAL.dll
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\BS\bin\Debug\InterfazPlugin.dll
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\BS\bin\Debug\EntityFramework.dll
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\BS\bin\Debug\DAL.pdb
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\BS\bin\Debug\InterfazPlugin.pdb
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\BS\bin\Debug\EntityFramework.xml
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\BS\obj\Debug\BS.dll
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\BS\obj\Debug\BS.pdb
+C:\Users\David\Desktop\backMedical3\Medica\BS\bin\Debug\BS.dll
+C:\Users\David\Desktop\backMedical3\Medica\BS\bin\Debug\BS.pdb
+C:\Users\David\Desktop\backMedical3\Medica\BS\bin\Debug\DAL.dll
+C:\Users\David\Desktop\backMedical3\Medica\BS\bin\Debug\DO.dll
+C:\Users\David\Desktop\backMedical3\Medica\BS\bin\Debug\EntityFramework.dll
+C:\Users\David\Desktop\backMedical3\Medica\BS\bin\Debug\InterfazPlugin.dll
+C:\Users\David\Desktop\backMedical3\Medica\BS\bin\Debug\DAL.pdb
+C:\Users\David\Desktop\backMedical3\Medica\BS\bin\Debug\DAL.dll.config
+C:\Users\David\Desktop\backMedical3\Medica\BS\bin\Debug\DO.pdb
+C:\Users\David\Desktop\backMedical3\Medica\BS\bin\Debug\EntityFramework.xml
+C:\Users\David\Desktop\backMedical3\Medica\BS\bin\Debug\InterfazPlugin.pdb
+C:\Users\David\Desktop\backMedical3\Medica\BS\obj\Debug\BS.csprojResolveAssemblyReference.cache
+C:\Users\David\Desktop\backMedical3\Medica\BS\obj\Debug\BS.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\backMedical3\Medica\BS\obj\Debug\BS.dll
+C:\Users\David\Desktop\backMedical3\Medica\BS\obj\Debug\BS.pdb
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\BS\bin\Debug\BS.dll
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\BS\bin\Debug\BS.pdb
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\BS\bin\Debug\DAL.dll
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\BS\bin\Debug\DO.dll
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\BS\bin\Debug\EntityFramework.dll
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\BS\bin\Debug\InterfazPlugin.dll
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\BS\bin\Debug\DAL.pdb
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\BS\bin\Debug\DO.pdb
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\BS\bin\Debug\EntityFramework.xml
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\BS\bin\Debug\InterfazPlugin.pdb
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\BS\obj\Debug\BS.csprojResolveAssemblyReference.cache
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\BS\obj\Debug\BS.dll
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\BS\obj\Debug\BS.pdb
+C:\Users\David\Desktop\backMedical3\Medica\BS\obj\Debug\BS.csproj.CopyComplete

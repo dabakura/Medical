@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="91b2f7a7accd48258133f8109e283008" Name="Diagram1">
+        <EntityTypeShape EntityType="MedicalModel.CONTRAINDICACION_DIAGNOSTICO" Width="1.5" PointX="6" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalModel.CONTRAINDICACION_MEDICAMENTO" Width="1.5" PointX="3" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalModel.CONTRAINDICACION_SINTOMA" Width="1.5" PointX="6" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalModel.DATOSPERSONALES" Width="1.5" PointX="6.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalModel.DIAGNOSTICO" Width="1.5" PointX="6.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalModel.DOSIS" Width="1.5" PointX="3" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalModel.INDICACION_DIAGNOSTICO" Width="1.5" PointX="6" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalModel.INDICACION_SINTOMA" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalModel.MEDI_NOMBRE" Width="1.5" PointX="3" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalModel.MEDICAMENTO" Width="1.5" PointX="0.75" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalModel.PACIENTE" Width="1.5" PointX="9" PointY="19.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalModel.PACIENTE_SINTOMA" Width="1.5" PointX="11.25" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalModel.PADECIMIENTO" Width="1.5" PointX="11.25" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalModel.SIGNOS_VITALES" Width="1.5" PointX="11.25" PointY="23.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalModel.SINTOMA" Width="1.5" PointX="9" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalModel.USUARIO" Width="1.5" PointX="9" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalModel.VIA_ADMINISTRACION" Width="1.5" PointX="3" PointY="31.375" IsExpanded="true" />
+        <AssociationConnector Association="MedicalModel.FK_CONTRAINDICACION_DIAGNOSTICO_DIAGNOSTICO" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_CONTRAINDICACION_DIAGNOSTICO_MEDICAMENTO" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO1" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_CONTRAINDICACION_MEDICAMENTO_MEDICAMENTO2" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_CONTRAINDICACION_SINTOMA_MEDICAMENTO" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_CONTRAINDICACION_SINTOMA_SINTOMA" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_PACIENTE_DATOSPERSONALES" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_USUARIO_DatosPersonales" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_DIAGNOSTICO_DIAGNOSTICO" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_INDICACION_DIAGNOSTICO_DIAGNOSTICO" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_PACIENTE_DIAGNOSTICO" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_PADECIMIENTOS_DIAGNOSTICO" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_DOSIS_MEDICAMENTO" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_INDICACION_DIAGNOSTICO_MEDICAMENTO" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_INDICACION_SINTOMA_MEDICAMENTO" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_INDICACION_SINTOMA_SINTOMA" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_MEDI_NOMBRE_MEDICAMENTO" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_PACIENTE_SINTOMA_PACIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_PADECIMIENTO_PACIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_SIGNOS_VITALES_PACIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.FK_PACIENTE_SINTOMA_SINTOMA" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.DIAGNOSTICO_SINTOMA" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.EFECTO_ADVERSO" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalModel.MEDICAMENTO_VIA" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MedicalModel.PACIENTE_MEDICAMENTO" Width="1.5" PointX="11.25" PointY="16.125" />
+        <AssociationConnector Association="MedicalModel.FK_PACIENTE_MEDICAMENTO_MEDICAMENTO" />
+        <AssociationConnector Association="MedicalModel.FK_PACIENTE_MEDICAMENTO_PACIENTE" />
+        <EntityTypeShape EntityType="MedicalModel.VistaPacienteMedicamento" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MedicalModel.VistaMedicamentosContraindicacion" Width="1.5" PointX="3.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

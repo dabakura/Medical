@@ -1,0 +1,287 @@
+c:\users\david\source\repos\Medica\UI\bin\Debug\UI.exe.config
+c:\users\david\source\repos\Medica\UI\bin\Debug\UI.exe
+c:\users\david\source\repos\Medica\UI\bin\Debug\UI.pdb
+c:\users\david\source\repos\Medica\UI\obj\Debug\UI.FrmWindows.resources
+c:\users\david\source\repos\Medica\UI\obj\Debug\UI.Properties.Resources.resources
+c:\users\david\source\repos\Medica\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+c:\users\david\source\repos\Medica\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+c:\users\david\source\repos\Medica\UI\obj\Debug\UI.exe
+c:\users\david\source\repos\Medica\UI\obj\Debug\UI.pdb
+c:\users\david\source\repos\Medica\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+c:\users\david\source\repos\Medica\UI\bin\Debug\BS.dll
+c:\users\david\source\repos\Medica\UI\bin\Debug\BS.pdb
+c:\users\david\source\repos\Medica\UI\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\David\source\repos\Medica\UI\obj\Debug\UI.FrmInicio.resources
+C:\Users\David\source\repos\Medica\UI\obj\Debug\UI.FormBase.resources
+C:\Users\David\source\repos\Medica\UI\obj\Debug\UI.FrmPacientes.resources
+C:\Users\David\source\repos\Medica\UI\bin\Debug\BunifuDataViz 1.0.1.dll
+C:\Users\David\source\repos\Medica\UI\obj\Debug\UI.FrmKardex.resources
+C:\Users\David\Desktop\Medica\UI\bin\Debug\UI.exe.config
+C:\Users\David\Desktop\Medica\UI\bin\Debug\UI.exe
+C:\Users\David\Desktop\Medica\UI\bin\Debug\UI.pdb
+C:\Users\David\Desktop\Medica\UI\bin\Debug\BS.dll
+C:\Users\David\Desktop\Medica\UI\bin\Debug\CUAdd.dll
+C:\Users\David\Desktop\Medica\UI\bin\Debug\DAL.dll
+C:\Users\David\Desktop\Medica\UI\bin\Debug\InterfazPlugin.dll
+C:\Users\David\Desktop\Medica\UI\bin\Debug\UCErrorTextBox.dll
+C:\Users\David\Desktop\Medica\UI\bin\Debug\EntityFramework.dll
+C:\Users\David\Desktop\Medica\UI\bin\Debug\BS.pdb
+C:\Users\David\Desktop\Medica\UI\bin\Debug\DAL.pdb
+C:\Users\David\Desktop\Medica\UI\bin\Debug\DAL.dll.config
+C:\Users\David\Desktop\Medica\UI\bin\Debug\InterfazPlugin.pdb
+C:\Users\David\Desktop\Medica\UI\bin\Debug\EntityFramework.xml
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.CUCarpeta.resources
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.CUComboBoxAdd.resources
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.CUGenero.resources
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.FrmAddPaciente.resources
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.FormBase.resources
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.FrmBuscarPaciente.resources
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.FrmDiagnostico.resources
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.FrmExpediente.resources
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.FrmInicio.resources
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.FrmKardex.resources
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.frmLogin.resources
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.FrmMedicamentos.resources
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.FrmPacientes.resources
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.FrmPlugins.resources
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.FrmWindows.resources
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.Properties.Resources.resources
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.exe
+C:\Users\David\Desktop\Medica\UI\obj\Debug\UI.pdb
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.CUCarpeta.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.CUComboBoxAdd.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.CUGenero.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.FrmAddPaciente.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.FormBase.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.FrmBuscarPaciente.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.FrmDiagnostico.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.FrmExpediente.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.FrmInicio.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.FrmKardex.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.frmLogin.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.FrmMedicamentos.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.FrmPacientes.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.FrmPlugins.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.FrmWindows.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.Properties.Resources.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\bin\Debug\UI.exe.config
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\bin\Debug\UI.exe
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\bin\Debug\UI.pdb
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\bin\Debug\BS.dll
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\bin\Debug\DAL.dll
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\bin\Debug\InterfazPlugin.dll
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\bin\Debug\UCErrorTextBox.dll
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\bin\Debug\EntityFramework.dll
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\bin\Debug\BS.pdb
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\bin\Debug\DAL.pdb
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\bin\Debug\CUAdd.pdb
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\bin\Debug\InterfazPlugin.pdb
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\bin\Debug\UCErrorTextBox.pdb
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\bin\Debug\EntityFramework.xml
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.exe
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\obj\Debug\UI.pdb
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\Medica\UI\bin\Debug\CUAdd.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\UI.exe.config
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\UI.exe
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\UI.pdb
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\BS.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\CUAdd.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\DAL.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\DO.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\InterfazPlugin.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\UCErrorTextBox.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\EntityFramework.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\BS.pdb
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\DAL.pdb
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\DAL.dll.config
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\DO.pdb
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\CUAdd.pdb
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\InterfazPlugin.pdb
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\UCErrorTextBox.pdb
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\EntityFramework.xml
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.CUCarpeta.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.CUComboBoxAdd.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.CUGenero.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.CUPulsoLatido.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.CUSaturacion.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.CUTemperatura.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmBloqueo.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmExpedirnteImagen.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmSignosVitales.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmTemp.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmVias_Administracion.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmMasInfoMedicamento.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmBuscaEliminaMedicamento.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmAddMedicamentos2.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmAddMedicamentos.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmAddPaciente.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FormBase.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmBuscaEliminaPaciente.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmDiagnostico.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmExpediente.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmInicio.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmKardex.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmLogin.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmMedicamentos.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmPacientes.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmPlugins.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmSintoma.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmWindows.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.Properties.Resources.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.exe
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.pdb
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.CUSignos.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\bin\Debug\UI.exe.config
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.exe
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.pdb
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.csprojResolveAssemblyReference.cache
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.CUCarpeta.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.CUComboBoxAdd.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.CUGenero.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.CUPulsoLatido.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.CUSaturacion.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.CUSignos.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.CUTemperatura.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmBloqueo.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmExpedirnteImagen.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmSignosVitales.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmTemp.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmVias_Administracion.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmMasInfoMedicamento.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmBuscaEliminaMedicamento.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmAddMedicamentos2.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmAddMedicamentos.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmAddPaciente.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FormBase.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmBuscaEliminaPaciente.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmDiagnostico.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmExpediente.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmInicio.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmKardex.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmLogin.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmMedicamentos.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmPacientes.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmPlugins.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmSintoma.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmWindows.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.Properties.Resources.resources
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\obj\Debug\UI.csproj.GenerateResource.Cache
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\bin\Debug\UI.exe
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\bin\Debug\UI.pdb
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\bin\Debug\BS.dll
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\bin\Debug\CUAdd.dll
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\bin\Debug\DAL.dll
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\bin\Debug\DO.dll
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\bin\Debug\InterfazPlugin.dll
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\bin\Debug\UCErrorTextBox.dll
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\bin\Debug\EntityFramework.dll
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\bin\Debug\BS.pdb
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\bin\Debug\DAL.pdb
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\bin\Debug\DO.pdb
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\bin\Debug\CUAdd.pdb
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\bin\Debug\InterfazPlugin.pdb
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\bin\Debug\UCErrorTextBox.pdb
+C:\Users\Laboratorios\Desktop\backMedical3\Medica\UI\bin\Debug\EntityFramework.xml
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.csproj.CopyComplete
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.ReportViewer.Design.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\EnvDTE.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\stdole.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.VSHelp.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.11.0.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.10.0.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.14.0.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.12.0.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Designer.Interfaces.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Debugger.InteropA.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\EnvDTE80.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Data.Services.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\VSLangProj.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Shell.Interop.11.0.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Data.Core.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\VSLangProj80.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.ManagedInterfaces.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.WCFReference.Interop.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Debugger.Interop.11.0.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.GraphModel.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.MSXML.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.10.0.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\VSLangProj2.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.11.0.xml
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.10.0.xml
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.14.0.xml
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Shell.Immutable.12.0.xml
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.Designer.Interfaces.xml
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\es\Microsoft.VisualStudio.Data.Services.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\bin\Debug\es\Microsoft.VisualStudio.Data.Core.resources.dll
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.exe.config
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmReportePaciente.resources
+C:\Users\David\Desktop\backMedical3\Medica\UI\obj\Debug\UI.FrmReporteMedicamento.resources

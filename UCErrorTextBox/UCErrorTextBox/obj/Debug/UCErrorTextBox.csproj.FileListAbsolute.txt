@@ -1,0 +1,21 @@
+c:\users\david\source\repos\UCErrorTextBox\UCErrorTextBox\bin\Debug\UCErrorTextBox.dll
+c:\users\david\source\repos\UCErrorTextBox\UCErrorTextBox\bin\Debug\UCErrorTextBox.pdb
+c:\users\david\source\repos\UCErrorTextBox\UCErrorTextBox\obj\Debug\UCErrorTextBox.csproj.CoreCompileInputs.cache
+c:\users\david\source\repos\UCErrorTextBox\UCErrorTextBox\obj\Debug\UCErrorTextBox.dll
+c:\users\david\source\repos\UCErrorTextBox\UCErrorTextBox\obj\Debug\UCErrorTextBox.pdb
+c:\users\david\source\repos\UCErrorTextBox\UCErrorTextBox\obj\Debug\UCErrorTextBox.ErrorTxtBox.resources
+c:\users\david\source\repos\UCErrorTextBox\UCErrorTextBox\obj\Debug\UCErrorTextBox.csproj.GenerateResource.Cache
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\UCErrorTextBox\UCErrorTextBox\bin\Debug\UCErrorTextBox.dll
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\UCErrorTextBox\UCErrorTextBox\bin\Debug\UCErrorTextBox.pdb
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\UCErrorTextBox\UCErrorTextBox\obj\Debug\UCErrorTextBox.ErrorTxtBox.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\UCErrorTextBox\UCErrorTextBox\obj\Debug\UCErrorTextBox.csproj.GenerateResource.Cache
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\UCErrorTextBox\UCErrorTextBox\obj\Debug\UCErrorTextBox.dll
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\UCErrorTextBox\UCErrorTextBox\obj\Debug\UCErrorTextBox.pdb
+C:\Users\David\Desktop\backMedical3\UCErrorTextBox\UCErrorTextBox\bin\Debug\UCErrorTextBox.dll
+C:\Users\David\Desktop\backMedical3\UCErrorTextBox\UCErrorTextBox\bin\Debug\UCErrorTextBox.pdb
+C:\Users\David\Desktop\backMedical3\UCErrorTextBox\UCErrorTextBox\obj\Debug\UCErrorTextBox.csprojResolveAssemblyReference.cache
+C:\Users\David\Desktop\backMedical3\UCErrorTextBox\UCErrorTextBox\obj\Debug\UCErrorTextBox.ErrorTxtBox.resources
+C:\Users\David\Desktop\backMedical3\UCErrorTextBox\UCErrorTextBox\obj\Debug\UCErrorTextBox.csproj.GenerateResource.cache
+C:\Users\David\Desktop\backMedical3\UCErrorTextBox\UCErrorTextBox\obj\Debug\UCErrorTextBox.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\backMedical3\UCErrorTextBox\UCErrorTextBox\obj\Debug\UCErrorTextBox.dll
+C:\Users\David\Desktop\backMedical3\UCErrorTextBox\UCErrorTextBox\obj\Debug\UCErrorTextBox.pdb

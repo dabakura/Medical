@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MedicalModelStoreContainer" CdmEntityContainer="MedicalEntities">
+    <EntitySetMapping Name="DATOSPERSONALES">
+      <EntityTypeMapping TypeName="MedicalModel.DATOSPERSONALES">
+        <MappingFragment StoreEntitySet="DATOSPERSONALES">
+          <ScalarProperty Name="VCEDULA" ColumnName="VCEDULA" />
+          <ScalarProperty Name="VNOMBRE" ColumnName="VNOMBRE" />
+          <ScalarProperty Name="VPRIMERAPELLIDO" ColumnName="VPRIMERAPELLIDO" />
+          <ScalarProperty Name="VSEGUNDOPELLIDO" ColumnName="VSEGUNDOPELLIDO" />
+          <ScalarProperty Name="DTFECHANACIMIENTO" ColumnName="DTFECHANACIMIENTO" />
+          <ScalarProperty Name="VGENERO" ColumnName="VGENERO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DIAGNOSTICO">
+      <EntityTypeMapping TypeName="MedicalModel.DIAGNOSTICO">
+        <MappingFragment StoreEntitySet="DIAGNOSTICO">
+          <ScalarProperty Name="IID" ColumnName="IID" />
+          <ScalarProperty Name="VDIAGNOSTICO" ColumnName="VDIAGNOSTICO" />
+          <ScalarProperty Name="TDESCRIPCION" ColumnName="TDESCRIPCION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PACIENTE">
+      <EntityTypeMapping TypeName="MedicalModel.PACIENTE">
+        <MappingFragment StoreEntitySet="PACIENTE">
+          <ScalarProperty Name="VIDENTIFICACION" ColumnName="VIDENTIFICACION" />
+          <ScalarProperty Name="IDIAGNOSTICO" ColumnName="IDIAGNOSTICO" />
+          <ScalarProperty Name="IEDAD" ColumnName="IEDAD" />
+          <ScalarProperty Name="DTALLA" ColumnName="DTALLA" />
+          <ScalarProperty Name="DPESO" ColumnName="DPESO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PADECIMIENTO">
+      <EntityTypeMapping TypeName="MedicalModel.PADECIMIENTO">
+        <MappingFragment StoreEntitySet="PADECIMIENTO">
+          <ScalarProperty Name="IID" ColumnName="IID" />
+          <ScalarProperty Name="IIDPACIENTE" ColumnName="IIDPACIENTE" />
+          <ScalarProperty Name="IIDDIAGNOSTICO" ColumnName="IIDDIAGNOSTICO" />
+          <ScalarProperty Name="DTFECHAINICIO" ColumnName="DTFECHAINICIO" />
+          <ScalarProperty Name="BESTADO" ColumnName="BESTADO" />
+          <ScalarProperty Name="DTFECHAFINALIZACION" ColumnName="DTFECHAFINALIZACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="USUARIO">
+      <EntityTypeMapping TypeName="MedicalModel.USUARIO">
+        <MappingFragment StoreEntitySet="USUARIO">
+          <ScalarProperty Name="USUARIO1" ColumnName="USUARIO" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="IDDATOSPERSONALES" ColumnName="IDDATOSPERSONALES" />
+          <ScalarProperty Name="VROL" ColumnName="VROL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRAINDICACION_DIAGNOSTICO">
+      <EntityTypeMapping TypeName="MedicalModel.CONTRAINDICACION_DIAGNOSTICO">
+        <MappingFragment StoreEntitySet="CONTRAINDICACION_DIAGNOSTICO">
+          <ScalarProperty Name="VDESCRIPCION" ColumnName="VDESCRIPCION" />
+          <ScalarProperty Name="IIDIAGNOSTICO" ColumnName="IIDIAGNOSTICO" />
+          <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRAINDICACION_MEDICAMENTO">
+      <EntityTypeMapping TypeName="MedicalModel.CONTRAINDICACION_MEDICAMENTO">
+        <MappingFragment StoreEntitySet="CONTRAINDICACION_MEDICAMENTO">
+          <ScalarProperty Name="VDESCRIPCION" ColumnName="VDESCRIPCION" />
+          <ScalarProperty Name="IIDMEDICAMENTO" ColumnName="IIDMEDICAMENTO" />
+          <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONTRAINDICACION_SINTOMA">
+      <EntityTypeMapping TypeName="MedicalModel.CONTRAINDICACION_SINTOMA">
+        <MappingFragment StoreEntitySet="CONTRAINDICACION_SINTOMA">
+          <ScalarProperty Name="VDESCRIPCION" ColumnName="VDESCRIPCION" />
+          <ScalarProperty Name="IIDSINTOMA" ColumnName="IIDSINTOMA" />
+          <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INDICACION_DIAGNOSTICO">
+      <EntityTypeMapping TypeName="MedicalModel.INDICACION_DIAGNOSTICO">
+        <MappingFragment StoreEntitySet="INDICACION_DIAGNOSTICO">
+          <ScalarProperty Name="VDESCRIPCION" ColumnName="VDESCRIPCION" />
+          <ScalarProperty Name="IIDIAGNOSTICO" ColumnName="IIDIAGNOSTICO" />
+          <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="INDICACION_SINTOMA">
+      <EntityTypeMapping TypeName="MedicalModel.INDICACION_SINTOMA">
+        <MappingFragment StoreEntitySet="INDICACION_SINTOMA">
+          <ScalarProperty Name="VDESCRIPCION" ColumnName="VDESCRIPCION" />
+          <ScalarProperty Name="ISINTOMA" ColumnName="ISINTOMA" />
+          <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MEDI_NOMBRE">
+      <EntityTypeMapping TypeName="MedicalModel.MEDI_NOMBRE">
+        <MappingFragment StoreEntitySet="MEDI_NOMBRE">
+          <ScalarProperty Name="VNOMBRE" ColumnName="VNOMBRE" />
+          <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MEDICAMENTO">
+      <EntityTypeMapping TypeName="MedicalModel.MEDICAMENTO">
+        <MappingFragment StoreEntitySet="MEDICAMENTO">
+          <ScalarProperty Name="BESTADO" ColumnName="BESTADO" />
+          <ScalarProperty Name="VDESCRIPCION" ColumnName="VDESCRIPCION" />
+          <ScalarProperty Name="VCOMPOSIION" ColumnName="VCOMPOSIION" />
+          <ScalarProperty Name="VESTEROQUIMICA" ColumnName="VESTEROQUIMICA" />
+          <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SINTOMA">
+      <EntityTypeMapping TypeName="MedicalModel.SINTOMA">
+        <MappingFragment StoreEntitySet="SINTOMA">
+          <ScalarProperty Name="VDESCRIPCION" ColumnName="VDESCRIPCION" />
+          <ScalarProperty Name="VEFECTO" ColumnName="VEFECTO" />
+          <ScalarProperty Name="IID" ColumnName="IID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VIA_ADMINISTRACION">
+      <EntityTypeMapping TypeName="MedicalModel.VIA_ADMINISTRACION">
+        <MappingFragment StoreEntitySet="VIA_ADMINISTRACION">
+          <ScalarProperty Name="VDESCRIPCION" ColumnName="VDESCRIPCION" />
+          <ScalarProperty Name="VNOMBRE" ColumnName="VNOMBRE" />
+          <ScalarProperty Name="IID" ColumnName="IID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="DIAGNOSTICO_SINTOMA" TypeName="MedicalModel.DIAGNOSTICO_SINTOMA" StoreEntitySet="DIAGNOSTICO_SINTOMA">
+      <EndProperty Name="SINTOMA">
+        <ScalarProperty Name="IID" ColumnName="IIDSINTOMA" />
+      </EndProperty>
+      <EndProperty Name="DIAGNOSTICO">
+        <ScalarProperty Name="IID" ColumnName="IIDDIAGNOSTICO" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="EFECTO_ADVERSO" TypeName="MedicalModel.EFECTO_ADVERSO" StoreEntitySet="EFECTO_ADVERSO">
+      <EndProperty Name="SINTOMA">
+        <ScalarProperty Name="IID" ColumnName="IIDSINTOMA" />
+      </EndProperty>
+      <EndProperty Name="MEDICAMENTO">
+        <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="MEDICAMENTO_VIA" TypeName="MedicalModel.MEDICAMENTO_VIA" StoreEntitySet="MEDICAMENTO_VIA">
+      <EndProperty Name="VIA_ADMINISTRACION">
+        <ScalarProperty Name="IID" ColumnName="IIDVIA" />
+      </EndProperty>
+      <EndProperty Name="MEDICAMENTO">
+        <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PACIENTE_SINTOMA" TypeName="MedicalModel.PACIENTE_SINTOMA" StoreEntitySet="PACIENTE_SINTOMA">
+      <EndProperty Name="SINTOMA">
+        <ScalarProperty Name="IID" ColumnName="IIDSINTOMA" />
+      </EndProperty>
+      <EndProperty Name="PACIENTE">
+        <ScalarProperty Name="VIDENTIFICACION" ColumnName="VIDENTIFICACION" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="DOSIS">
+      <EntityTypeMapping TypeName="MedicalModel.DOSIS">
+        <MappingFragment StoreEntitySet="DOSIS">
+          <ScalarProperty Name="DMAX" ColumnName="DMAX" />
+          <ScalarProperty Name="DMIN" ColumnName="DMIN" />
+          <ScalarProperty Name="DDOSIS" ColumnName="DDOSIS" />
+          <ScalarProperty Name="VRANGO" ColumnName="VRANGO" />
+          <ScalarProperty Name="ICODIGO" ColumnName="ICODIGO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SIGNOS_VITALES">
+      <EntityTypeMapping TypeName="MedicalModel.SIGNOS_VITALES">
+        <MappingFragment StoreEntitySet="SIGNOS_VITALES">
+          <ScalarProperty Name="IPULSO" ColumnName="IPULSO" />
+          <ScalarProperty Name="ISATURACION" ColumnName="ISATURACION" />
+          <ScalarProperty Name="DTEMPERATURA" ColumnName="DTEMPERATURA" />
+          <ScalarProperty Name="IPRESION" ColumnName="IPRESION" />
+          <ScalarProperty Name="DTFECHA" ColumnName="DTFECHA" />
+          <ScalarProperty Name="IIDPACIENTE" ColumnName="IIDPACIENTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="EstadoPresionAlta" FunctionName="MedicalModel.Store.EstadoPresionAlta" />
+    <FunctionImportMapping FunctionImportName="EstadoPresionBaja" FunctionName="MedicalModel.Store.EstadoPresionBaja" />
+    <FunctionImportMapping FunctionImportName="EstadoPresionNormal" FunctionName="MedicalModel.Store.EstadoPresionNormal" />
+    <FunctionImportMapping FunctionImportName="EstadoPulsoAlta" FunctionName="MedicalModel.Store.EstadoPulsoAlta" />
+    <FunctionImportMapping FunctionImportName="EstadoPulsoBaja" FunctionName="MedicalModel.Store.EstadoPulsoBaja" />
+    <FunctionImportMapping FunctionImportName="EstadoPulsoNormal" FunctionName="MedicalModel.Store.EstadoPulsoNormal" />
+    <FunctionImportMapping FunctionImportName="EstadoSaturacionAlta" FunctionName="MedicalModel.Store.EstadoSaturacionAlta" />
+    <FunctionImportMapping FunctionImportName="EstadoSaturacionBaja" FunctionName="MedicalModel.Store.EstadoSaturacionBaja" />
+    <FunctionImportMapping FunctionImportName="EstadoSaturacionNormal" FunctionName="MedicalModel.Store.EstadoSaturacionNormal" />
+    <FunctionImportMapping FunctionImportName="EstadoTemperaturaAlta" FunctionName="MedicalModel.Store.EstadoTemperaturaAlta" />
+    <FunctionImportMapping FunctionImportName="EstadoTemperaturaBaja" FunctionName="MedicalModel.Store.EstadoTemperaturaBaja" />
+    <FunctionImportMapping FunctionImportName="EstadoTemperaturaNormal" FunctionName="MedicalModel.Store.EstadoTemperaturaNormal" />
+  </EntityContainerMapping>
+</Mapping>

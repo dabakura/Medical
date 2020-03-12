@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E826A1BE-A772-4FF6-B001-9EE4A6E56D8F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BunifuDataViz 1.0.1, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\BunifuDataViz 1.0.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.4, Version=1.5.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bunifu_UI_v1.5.4.dll</HintPath>
+    </Reference>
+    <Reference Include="CUAdd, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CUAdd\CUAdd\bin\Debug\CUAdd.dll</HintPath>
+    </Reference>
+    <Reference Include="InterfazPlugin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\InterfazPlugin\InterfazPlugin\bin\Debug\InterfazPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UCErrorTextBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\UCErrorTextBox\UCErrorTextBox\bin\Debug\UCErrorTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CUCarpeta.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CUCarpeta.Designer.cs">
+      <DependentUpon>CUCarpeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUComboBoxAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CUComboBoxAdd.Designer.cs">
+      <DependentUpon>CUComboBoxAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUDataGrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CUDataGrip.Designer.cs">
+      <DependentUpon>CUDataGrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUGenero.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CUGenero.Designer.cs">
+      <DependentUpon>CUGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUPulsoLatido.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CUPulsoLatido.Designer.cs">
+      <DependentUpon>CUPulsoLatido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUPulsoLatido.Presion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CUPulsoLatido.Pulso.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CUSaturacion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CUSaturacion.Designer.cs">
+      <DependentUpon>CUSaturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUSignos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CUSignos.Designer.cs">
+      <DependentUpon>CUSignos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUTemperatura.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CUTemperatura.Designer.cs">
+      <DependentUpon>CUTemperatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CUVProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetMedicamentos.cs">
+      <DependentUpon>DataSetMedicamentos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetMedicamentos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetMedicamentos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetPaciente.cs">
+      <DependentUpon>DataSetPaciente.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetPaciente.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPaciente.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBloqueo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBloqueo.Designer.cs">
+      <DependentUpon>FrmBloqueo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExpedirnteImagen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExpedirnteImagen.Designer.cs">
+      <DependentUpon>FrmExpedirnteImagen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReporteMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporteMedicamento.Designer.cs">
+      <DependentUpon>FrmReporteMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportePaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportePaciente.Designer.cs">
+      <DependentUpon>FrmReportePaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTemp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTemp.Designer.cs">
+      <DependentUpon>FrmTemp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVias_Administracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVias_Administracion.Designer.cs">
+      <DependentUpon>FrmVias_Administracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMasInfoMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMasInfoMedicamento.Designer.cs">
+      <DependentUpon>FrmMasInfoMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscaEliminaMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscaEliminaMedicamento.Designer.cs">
+      <DependentUpon>FrmBuscaEliminaMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddMedicamento2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddMedicamento2.Designer.cs">
+      <DependentUpon>FrmAddMedicamento2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddPaciente.Designer.cs">
+      <DependentUpon>FrmAddPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBase.Designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscaEliminaPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscaEliminaPaciente.designer.cs">
+      <DependentUpon>FrmBuscaEliminaPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDiagnostico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDiagnostico.Designer.cs">
+      <DependentUpon>FrmDiagnostico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExpediente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExpediente.Designer.cs">
+      <DependentUpon>FrmExpediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInicio.Designer.cs">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKardex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKardex.Designer.cs">
+      <DependentUpon>FrmKardex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMedicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMedicamentos.Designer.cs">
+      <DependentUpon>FrmMedicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPacientes.Designer.cs">
+      <DependentUpon>FrmPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlugins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlugins.Designer.cs">
+      <DependentUpon>FrmPlugins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddMedicamento.Designer.cs">
+      <DependentUpon>FrmAddMedicamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSignosVitales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSignosVitales.Designer.cs">
+      <DependentUpon>FrmSignosVitales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSintoma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSintoma.Designer.cs">
+      <DependentUpon>FrmSintoma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWindows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWindows.Designer.cs">
+      <DependentUpon>FrmWindows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="CUCarpeta.resx">
+      <DependentUpon>CUCarpeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUComboBoxAdd.resx">
+      <DependentUpon>CUComboBoxAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUGenero.resx">
+      <DependentUpon>CUGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUPulsoLatido.resx">
+      <DependentUpon>CUPulsoLatido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUSaturacion.resx">
+      <DependentUpon>CUSaturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUSignos.resx">
+      <DependentUpon>CUSignos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUTemperatura.resx">
+      <DependentUpon>CUTemperatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBloqueo.resx">
+      <DependentUpon>FrmBloqueo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExpedirnteImagen.resx">
+      <DependentUpon>FrmExpedirnteImagen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporteMedicamento.resx">
+      <DependentUpon>FrmReporteMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportePaciente.resx">
+      <DependentUpon>FrmReportePaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSignosVitales.resx">
+      <DependentUpon>FrmSignosVitales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTemp.resx">
+      <DependentUpon>FrmTemp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVias_Administracion.resx">
+      <DependentUpon>FrmVias_Administracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMasInfoMedicamento.resx">
+      <DependentUpon>FrmMasInfoMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscaEliminaMedicamento.resx">
+      <DependentUpon>FrmBuscaEliminaMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddMedicamento2.resx">
+      <DependentUpon>FrmAddMedicamento2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddMedicamento.resx">
+      <DependentUpon>FrmAddMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddPaciente.resx">
+      <DependentUpon>FrmAddPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscaEliminaPaciente.resx">
+      <DependentUpon>FrmBuscaEliminaPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDiagnostico.resx">
+      <DependentUpon>FrmDiagnostico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExpediente.resx">
+      <DependentUpon>FrmExpediente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInicio.resx">
+      <DependentUpon>FrmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKardex.resx">
+      <DependentUpon>FrmKardex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMedicamentos.resx">
+      <DependentUpon>FrmMedicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPacientes.resx">
+      <DependentUpon>FrmPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlugins.resx">
+      <DependentUpon>FrmPlugins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSintoma.resx">
+      <DependentUpon>FrmSintoma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWindows.resx">
+      <DependentUpon>FrmWindows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportMedicamentoEfectoAdverso.rdlc" />
+    <EmbeddedResource Include="ReportMedicamentomedicamento.rdlc" />
+    <EmbeddedResource Include="ReportMedicamentoindisintoma.rdlc" />
+    <EmbeddedResource Include="ReportMedicamentoindidiagnostico.rdlc" />
+    <EmbeddedResource Include="ReportMedicamentoContramedi.rdlc" />
+    <EmbeddedResource Include="ReportMedicamentocontrasinto.rdlc" />
+    <EmbeddedResource Include="ReportMedicamentocontradiagn.rdlc" />
+    <EmbeddedResource Include="ReportMedicamentodosis.rdlc" />
+    <EmbeddedResource Include="ReportMedicamentovia.rdlc" />
+    <EmbeddedResource Include="ReportMedicamentoNombre.rdlc" />
+    <EmbeddedResource Include="ReportPacienteDatosPaciente.rdlc" />
+    <EmbeddedResource Include="ReportPacienteDatosPersonales.rdlc" />
+    <EmbeddedResource Include="ReportPacienteMedicamentos.rdlc" />
+    <EmbeddedResource Include="ReportPacientePadecimientos.rdlc" />
+    <EmbeddedResource Include="ReportPacienteSignosVitales.rdlc" />
+    <EmbeddedResource Include="ReportPacienteSintomas.rdlc" />
+    <None Include="DataSetMedicamentos.xsc">
+      <DependentUpon>DataSetMedicamentos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetMedicamentos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetMedicamentos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetMedicamentos.xss">
+      <DependentUpon>DataSetMedicamentos.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPaciente.xsc">
+      <DependentUpon>DataSetPaciente.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPaciente.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPaciente.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetPaciente.xss">
+      <DependentUpon>DataSetPaciente.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BS\BS.csproj">
+      <Project>{37d4b436-8912-4b2d-9d1f-3597040b6d44}</Project>
+      <Name>BS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{40479bcc-c5aa-4426-aba9-d41cb5b3e2d5}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DO\DO.csproj">
+      <Project>{09ba58c2-1b7b-4a9d-a0c8-840592d17f73}</Project>
+      <Name>DO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MedicalIcono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pacientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expediente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicamentos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signovital.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plugin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textura1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userAdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userDelete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userBuscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userSave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoPacientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical-login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pluginFondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textura2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoPacientes2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoMedicamento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mediMenos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mediMas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrastrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bloqueo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notificacion.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\termometro2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\termometro3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\termometro4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corablue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coragreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corared.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corazonblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corazongreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\corazonred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paciente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Medico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ninguno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Otros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Administrador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Enfermera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farmaceutico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

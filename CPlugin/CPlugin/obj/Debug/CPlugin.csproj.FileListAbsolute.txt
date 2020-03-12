@@ -1,0 +1,41 @@
+c:\users\david\source\repos\CPlugin\CPlugin\bin\Debug\CPlugin.dll
+c:\users\david\source\repos\CPlugin\CPlugin\bin\Debug\CPlugin.pdb
+c:\users\david\source\repos\CPlugin\CPlugin\bin\Debug\InterfazPlugin.dll
+c:\users\david\source\repos\CPlugin\CPlugin\bin\Debug\InterfazPlugin.pdb
+c:\users\david\source\repos\CPlugin\CPlugin\obj\Debug\CPlugin.MyFormulario.resources
+c:\users\david\source\repos\CPlugin\CPlugin\obj\Debug\CPlugin.csproj.GenerateResource.Cache
+c:\users\david\source\repos\CPlugin\CPlugin\obj\Debug\CPlugin.csproj.CoreCompileInputs.cache
+c:\users\david\source\repos\CPlugin\CPlugin\obj\Debug\CPlugin.dll
+c:\users\david\source\repos\CPlugin\CPlugin\obj\Debug\CPlugin.pdb
+C:\Users\David\Desktop\CPlugin\CPlugin\bin\Debug\CPlugin.dll
+C:\Users\David\Desktop\CPlugin\CPlugin\bin\Debug\CPlugin.pdb
+C:\Users\David\Desktop\CPlugin\CPlugin\bin\Debug\InterfazPlugin.dll
+C:\Users\David\Desktop\CPlugin\CPlugin\bin\Debug\InterfazPlugin.pdb
+C:\Users\David\Desktop\CPlugin\CPlugin\obj\Debug\CPlugin.MyFormulario.resources
+C:\Users\David\Desktop\CPlugin\CPlugin\obj\Debug\CPlugin.csproj.GenerateResource.Cache
+C:\Users\David\Desktop\CPlugin\CPlugin\obj\Debug\CPlugin.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\CPlugin\CPlugin\obj\Debug\CPlugin.dll
+C:\Users\David\Desktop\CPlugin\CPlugin\obj\Debug\CPlugin.pdb
+C:\Users\David\Desktop\CPlugin\CPlugin\obj\Debug\CPlugin.Properties.Resources.resources
+C:\Users\David\Desktop\CPlugin\CPlugin\obj\Debug\CPlugin.csprojResolveAssemblyReference.cache
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\CPlugin\CPlugin\bin\Debug\CPlugin.dll
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\CPlugin\CPlugin\bin\Debug\CPlugin.pdb
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\CPlugin\CPlugin\bin\Debug\InterfazPlugin.dll
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\CPlugin\CPlugin\bin\Debug\InterfazPlugin.pdb
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\CPlugin\CPlugin\obj\Debug\CPlugin.csprojResolveAssemblyReference.cache
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\CPlugin\CPlugin\obj\Debug\CPlugin.MyFormulario.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\CPlugin\CPlugin\obj\Debug\CPlugin.Properties.Resources.resources
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\CPlugin\CPlugin\obj\Debug\CPlugin.csproj.GenerateResource.Cache
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\CPlugin\CPlugin\obj\Debug\CPlugin.dll
+C:\Users\Laboratorios\Desktop\Nueva carpeta (2)\CPlugin\CPlugin\obj\Debug\CPlugin.pdb
+C:\Users\David\Desktop\backMedical3\CPlugin\CPlugin\bin\Debug\CPlugin.dll.config
+C:\Users\David\Desktop\backMedical3\CPlugin\CPlugin\bin\Debug\CPlugin.dll
+C:\Users\David\Desktop\backMedical3\CPlugin\CPlugin\bin\Debug\CPlugin.pdb
+C:\Users\David\Desktop\backMedical3\CPlugin\CPlugin\bin\Debug\InterfazPlugin.dll
+C:\Users\David\Desktop\backMedical3\CPlugin\CPlugin\bin\Debug\InterfazPlugin.pdb
+C:\Users\David\Desktop\backMedical3\CPlugin\CPlugin\obj\Debug\CPlugin.MyFormulario.resources
+C:\Users\David\Desktop\backMedical3\CPlugin\CPlugin\obj\Debug\CPlugin.Properties.Resources.resources
+C:\Users\David\Desktop\backMedical3\CPlugin\CPlugin\obj\Debug\CPlugin.csproj.GenerateResource.Cache
+C:\Users\David\Desktop\backMedical3\CPlugin\CPlugin\obj\Debug\CPlugin.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\backMedical3\CPlugin\CPlugin\obj\Debug\CPlugin.dll
+C:\Users\David\Desktop\backMedical3\CPlugin\CPlugin\obj\Debug\CPlugin.pdb
